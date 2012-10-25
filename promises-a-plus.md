@@ -6,9 +6,11 @@ This proposal intentionally omits the progress handling portion of Promises/A.  
 
 Also intentionally omitted is a requirement for calling fulfill and broken handlers either synchronously or asynchronously [[1](#recommendations)].  Promises/A itself [does not specify](http://wiki.commonjs.org/wiki/Promises/A#Open_Issues), and both synchronous and asynchronous approaches exist in the current landscape of popular implementations.
 
-This specification borrows heavily from the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A) by Kris Zyp, as well as the [UncommonJS Thenable Promises](https://github.com/kriskowal/uncommonjs/blob/master/promises/specification.md) specification by Kris Kowal. All credit goes to those authors.
-
 As with Promises/A, this proposal does not deal with creation of promises, nor the mechanisms for fulfilling or breaking them.
+
+## Credit
+
+This specification borrows heavily from the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A) by Kris Zyp, as well as the [UncommonJS Thenable Promises](https://github.com/kriskowal/uncommonjs/blob/master/promises/specification.md) specification by Kris Kowal. All credit goes to those authors.
 
 # Notes on terminology
 
@@ -51,6 +53,7 @@ A promise is an object or function that defines a `then` method that accepts at 
     1. it must not be called more than once.
     1. it must not be called if `fulfilled` has already been called.
 1. If `broken` is not a function, it must be ignored.
+1. `fulfilled` and `broken` must not be called before `then` returns
 1. `then` may be called any number of times.
 1. `fulfilled` and `broken` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
 1. `then` must return a promise [[2](#recommendations)]
