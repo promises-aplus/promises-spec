@@ -10,15 +10,15 @@ As with Promises/A, this proposal does not deal with creation of promises, nor t
 
 This specification borrows heavily from the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A) by Kris Zyp, as well as the [UncommonJS Thenable Promises](https://github.com/kriskowal/uncommonjs/blob/master/promises/specification.md) specification by Kris Kowal. All credit goes to those authors.
 
-# Notes on terminology
+## Terminology
 
 1. "value" is any legal language value, including `undefined`, that is not a promise.
 1. "reason" is a value. The term "reason" is used here because it is used in existing promise literature, and helps to reinforce the difference between fulfilled and broken promise states. It also conveys the intent that a reason should represent the "reason the associated promise has been broken."
 1. "must not change" means immutable identity (e.g. `===`), and does not imply deep immutability.
 
-# Requirements
+## Requirements
 
-## General
+### General
 
 A promise represents a value that may not be available yet.  A promise must be one of three states: pending, fulfilled, or broken:
 
@@ -34,7 +34,7 @@ A promise represents a value that may not be available yet.  A promise must be o
     1. must provide a way to arrange for a function to be called with that reason.
     1. must not transition to any other state.
 
-## Specific
+### Specific
 
 A promise is an object or function that defines a `then` method that accepts the following two arguments:
 
@@ -52,8 +52,8 @@ A promise is an object or function that defines a `then` method that accepts the
     1. it must not be called if `fulfilled` has already been called.
 1. If `broken` is not a function, it must be ignored.
 1. `fulfilled` and `broken` must not be called before `then` returns.
-1. `then` may be called any number of times.
 1. `fulfilled` and `broken` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
+1. `then` may be called any number of times.
 1. `then` must return a promise [[1](#recommendations)]
 
         var promise2 = promise1.then(fulfilled, broken)
