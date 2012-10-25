@@ -2,7 +2,7 @@
 
 This proposal attempts to clarify the behavioral clauses of the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A), and to extend it to cover the cases where handlers may return a promise. 
 
-This proposal intentionally omits the progress handling portion of Promises/A.  In practice it has proven to be underspecified and currently does not have an agreed-upon or *defacto* behavior within the promise implementor community.
+This proposal intentionally omits the progress handling portion of Promises/A.  In practice it has proven to be underspecified and currently does not have an agreed-upon or *de facto* behavior within the promise implementor community.
 
 As with Promises/A, this proposal does not deal with creation of promises, nor the mechanisms for fulfilling or breaking them.
 
@@ -12,7 +12,7 @@ This specification borrows heavily from the [Promises/A proposal](http://wiki.co
 
 # Notes on terminology
 
-1. "value" is any legal language value, including undefined, that is not a promise.
+1. "value" is any legal language value, including `undefined`, that is not a promise.
 1. "reason" is a value. The term "reason" is used here because it is used in existing promise literature, and helps to reinforce the difference between fulfilled and broken promise states. It also conveys the intent that a reason should represent the "reason the associated promise has been broken."
 1. "must not change" is intended to mean "identity is immutable" (e.g. `===`), and does not imply deep immutability.
 
@@ -29,7 +29,7 @@ A promise represents a value that may not be available yet.  A promise must be o
     1. must have a value, which must not change.
     1. must provide a way to arrange for a function to be called with that value.
     1. must not transition to any other state.
-1. In the broken state, a promise:
+1. In the broken state, a promise
     1. must have a reason, which must not change.
     1. must provide a way to arrange for a function to be called with that reason.
     1. must not transition to any other state.
@@ -51,7 +51,7 @@ A promise is an object or function that defines a `then` method that accepts the
     1. it must not be called more than once.
     1. it must not be called if `fulfilled` has already been called.
 1. If `broken` is not a function, it must be ignored.
-1. `fulfilled` and `broken` must not be called before `then` returns
+1. `fulfilled` and `broken` must not be called before `then` returns.
 1. `then` may be called any number of times.
 1. `fulfilled` and `broken` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
 1. `then` must return a promise [[1](#recommendations)]
