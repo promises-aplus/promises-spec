@@ -38,7 +38,7 @@ A promise represents a value that may not be available yet.  A promise must be o
 
 ## Specific
 
-A promise is an object or function that defines a `then` method that accepts at least 2 arguments:
+A promise is an object or function that defines a `then` method that accepts the following two arguments:
 
     promise.then(fulfilled, broken)
 
