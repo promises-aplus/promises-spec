@@ -4,8 +4,6 @@ This proposal attempts to clarify the behavioral clauses of the [Promises/A prop
 
 This proposal intentionally omits the progress handling portion of Promises/A.  In practice it has proven to be underspecified and currently does not have an agreed-upon or *defacto* behavior within the promise implementor community.
 
-Also intentionally omitted is a requirement for calling fulfill and broken handlers either synchronously or asynchronously [[1](#recommendations)].  Promises/A itself [does not specify](http://wiki.commonjs.org/wiki/Promises/A#Open_Issues), and both synchronous and asynchronous approaches exist in the current landscape of popular implementations.
-
 As with Promises/A, this proposal does not deal with creation of promises, nor the mechanisms for fulfilling or breaking them.
 
 ## Credit
@@ -56,7 +54,7 @@ A promise is an object or function that defines a `then` method that accepts the
 1. `fulfilled` and `broken` must not be called before `then` returns
 1. `then` may be called any number of times.
 1. `fulfilled` and `broken` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
-1. `then` must return a promise [[2](#recommendations)]
+1. `then` must return a promise [[1](#recommendations)]
 
         var promise2 = promise1.then(fulfilled, broken)
 
@@ -71,5 +69,4 @@ A promise is an object or function that defines a `then` method that accepts the
 
 ## Recommendations
 
-1. Each implementation should document whether it calls handlers synchronously or asynchronously.
 1. Each implementation should document whether it may produce `promise2` === `promise1`, and if so, under what conditions.  It is intentionally not specified as to whether the returned promise may be the same promise, or must be a new promise, i.e. `promise2` !== `promise1` is not a requirement.  An implemention is free to allow `promise2` === `promise1`, provided it can meet the requirements in this section.
