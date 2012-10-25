@@ -14,7 +14,7 @@ This specification borrows heavily from the [Promises/A proposal](http://wiki.co
 
 1. "value" is any legal language value, including `undefined`, that is not a promise.
 1. "reason" is a value. The term "reason" is used here because it is used in existing promise literature, and helps to reinforce the difference between fulfilled and broken promise states. It also conveys the intent that a reason should represent the "reason the associated promise has been broken."
-1. "must not change" is intended to mean "identity is immutable" (e.g. `===`), and does not imply deep immutability.
+1. "must not change" means immutable identity (e.g. `===`), and does not imply deep immutability.
 
 # Requirements
 
