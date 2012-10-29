@@ -38,7 +38,7 @@ A promise represents a value that may not be available yet.  A promise must be o
 
 A promise is an object or function that defines a `then` method that accepts the following two arguments:
 
-    promise.then(fulfilled, rejected)
+    promise.then(onFulfilled, onRejected)
 
 1. Both `onFulfilled` and `onRejected` are optional arguments.
 1. If `onFulfilled` is a function,
@@ -56,7 +56,7 @@ A promise is an object or function that defines a `then` method that accepts the
 1. `then` may be called any number of times.
 1. `then` must return a promise [[1](#recommendations)]
 
-        var promise2 = promise1.then(fulfilled, rejected)
+        var promise2 = promise1.then(onFulfilled, onRejected)
 
     1. If `onFulfilled` is not a function and `promise1` is fufilled, `promise2` must be fulfilled with the same fulfillment value.
     1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
