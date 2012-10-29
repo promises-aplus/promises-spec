@@ -4,7 +4,7 @@ This proposal attempts to clarify the behavioral clauses of the [Promises/A prop
 
 This proposal intentionally omits the progress handling portion of Promises/A.  In practice it has proven to be underspecified and currently does not have an agreed-upon or *de facto* behavior within the promise implementor community.
 
-As with Promises/A, this proposal does not deal with creation of promises, nor the mechanisms for fulfilling or breaking them.
+As with Promises/A, this proposal does not deal with creation of promises, nor the mechanisms for fulfilling or rejecting them.
 
 ## Credit
 
