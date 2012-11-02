@@ -51,10 +51,10 @@ A promise is an object or function that defines a `then` method that accepts the
     1. it must not be called more than once.
     1. it must not be called if `onFulfilled` has already been called.
 1. If `onRejected` is not a function, it must be ignored.
-1. `onFulfilled` and `onRejected` must not be called before `then` returns.
+1. `onFulfilled` and `onRejected` must not be called before `then` returns [[1](#notes)].
 1. `onFulfilled` and `onRejected` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
 1. `then` may be called any number of times.
-1. `then` must return a promise [[1](#recommendations)]
+1. `then` must return a promise [[2](#notes)]
 
         var promise2 = promise1.then(onFulfilled, onRejected)
 
@@ -67,6 +67,8 @@ A promise is an object or function that defines a `then` method that accepts the
         1. If `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
         1. If `returnedPromise` is pending, `promise2` must also be pending.  When `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.  When `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
 
-## Recommendations
+## Notes
+
+1. In practical terms, an implementation must use a mechanism such as `setTimeout`, or a faster alternative, where available, such as `setImmediate` or `process.nextTick`, to ensure that `onFulfilled` or `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
 
 1. Each implementation should document whether it may produce `promise2` === `promise1`, and if so, under what conditions.  It is intentionally not specified as to whether the returned promise may be the same promise, or must be a new promise, i.e. `promise2` !== `promise1` is not a requirement.  An implemention is free to allow `promise2` === `promise1`, provided it can meet the requirements in this section.
