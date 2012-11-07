@@ -1,10 +1,10 @@
 # Promises/A+
 
-This proposal attempts to clarify the behavioral clauses of the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A), and to extend it to cover the cases where handlers may return a promise. 
-
-This proposal intentionally omits the progress handling portion of Promises/A.  In practice it has proven to be underspecified and currently does not have an agreed-upon or *de facto* behavior within the promise implementor community.
+This proposal attempts to clarify the behavioral clauses of the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A), to extend it to cover *de facto* behaviors, and to omit parts that have proven to be underspecified or problematic.
 
 As with Promises/A, this proposal does not deal with creation of promises, nor the mechanisms for fulfilling or rejecting them.
+
+For a full description of the differences between Promises/A+ and Promises/A, see [Promises/A+ Differences from Promises/A](differences-from-promises-a.md).
 
 ## Terminology
 
