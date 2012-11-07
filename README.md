@@ -6,10 +6,6 @@ This proposal intentionally omits the progress handling portion of Promises/A.  
 
 As with Promises/A, this proposal does not deal with creation of promises, nor the mechanisms for fulfilling or rejecting them.
 
-## Credit
-
-This specification borrows heavily from the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A) by Kris Zyp, as well as the [UncommonJS Thenable Promises](https://github.com/kriskowal/uncommonjs/blob/master/promises/specification.md) specification by Kris Kowal. All credit goes to those authors.
-
 ## Terminology
 
 1. "value" is any legal language value, including `undefined`, that is not a promise.
