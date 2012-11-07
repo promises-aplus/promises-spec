@@ -7,6 +7,10 @@ Promises/A+ draws heavily from the following works, and the majority of credit g
 * [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A) by Kris Zyp (@kriszyp), and
 * [UncommonJS Thenable Promises](https://github.com/kriskowal/uncommonjs/blob/master/promises/specification.md) specification by Kris Kowal (@kriskowal)
 
+## Editor
+
+The primary editor of the Promises/A+ specification is Brian Cavalier (@briancavalier)
+
 ## Contributors
 
 The following people assembled and contributed to the concepts and content in Promises/A+:
