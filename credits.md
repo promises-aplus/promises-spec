@@ -9,7 +9,7 @@ Promises/A+ draws heavily from the following works, and the majority of credit g
 
 ## Editor
 
-The primary editor of the Promises/A+ specification is Brian Cavalier (@briancavalier)
+The primary editor of the Promises/A+ specification is Brian Cavalier (@briancavalier).
 
 ## Contributors
 
