@@ -4,7 +4,7 @@ This proposal attempts to clarify the behavioral clauses of the [Promises/A prop
 
 As with Promises/A, this proposal does not deal with creation of promises, nor the mechanisms for fulfilling or rejecting them.
 
-For a full description of the differences between Promises/A+ and Promises/A, see [Promises/A+ Differences from Promises/A](blob/master/differences-from-promises-a.md).
+For a full description of the differences between Promises/A+ and Promises/A, see [Promises/A+ Differences from Promises/A](promises-spec/blob/master/differences-from-promises-a.md).
 
 ## Terminology
 
