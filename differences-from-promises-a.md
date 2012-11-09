@@ -21,4 +21,4 @@ Promises/A+ additionally specifies:
 1. the rejection reason passed to `onRejected` must be the thrown exception in the case where a handler throws;
 1. `onFulfilled` and `onRejected` must be called asynchronously;
 1. strict ordering of calls to `onFulfilled` and `onRejected` for subsequent calls to `then` on the same promise;
-1. `promise1 === promise2` is *not* a requirement for `var promise2 = promise1.then(onFulfilled, onRejected)`.
+1. `promise1 !== promise2` is *not* a requirement for `var promise2 = promise1.then(onFulfilled, onRejected)`.
