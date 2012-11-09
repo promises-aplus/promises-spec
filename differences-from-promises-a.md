@@ -1,3 +1,8 @@
+---
+layout: default
+title: Promises/A+ Differences from Promises/A
+---
+
 # Promises/A+ Differences from Promises/A
 
 Promises/A+ is based on the concepts and `.then()` API presented in the [CommonJS Promises/A](http://wiki.commonjs.org/wiki/Promises/A) proposal.  However, it differs from Promises/A in several important ways.
