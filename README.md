@@ -68,3 +68,23 @@ A promise is an object or function that defines a `then` method that accepts the
 1. In practical terms, an implementation must use a mechanism such as `setTimeout`, or a faster alternative, where available, such as `setImmediate` or `process.nextTick`, to ensure that `onFulfilled` or `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
 
 1. Each implementation should document whether it may produce `promise2` === `promise1`, and if so, under what conditions.  It is intentionally not specified as to whether the returned promise may be the same promise, or must be a new promise, i.e. `promise2` !== `promise1` is not a requirement.  An implemention is free to allow `promise2` === `promise1`, provided it can meet the requirements in this section.
+
+---
+
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="https://github.com/promises-aplus">
+    <span property="dct:title">the Promises/A+ organization</span></a>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title">Promises/A+ Promise Specification</span>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="US" about="https://github.com/promises-aplus">
+  United States</span>.
+</p>
