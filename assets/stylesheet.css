@@ -321,3 +321,45 @@ Small Device Styles
     font-size: 11px;
   }
 }
+
+/*******************************************************************************
+Numbering!
+*******************************************************************************/
+
+body {
+  counter-reset: h2 h3;
+}
+
+h2 {
+  counter-increment: h2;
+  counter-reset: h3;
+}
+h2::before {
+  content: counter(h2)". ";
+}
+
+h3 {
+  counter-increment: h3;
+}
+h3::before {
+  content: counter(h2)"."counter(h3)". ";
+}
+
+ol {
+  counter-reset: li;
+}
+
+ol li {
+  list-style-type: none;
+  counter-increment: li;
+}
+ol li::before {
+  display: inline;
+  float: left;
+}
+h2 ~ ol li::before, h3 ~ h2 ~ ol li::before {
+  content: counter(h2)"."counters(li, ".")".\A0";
+}
+h3 ~ ol li::before {
+  content: counter(h2)"."counter(h3)"."counters(li, ".")".\A0";
+}
