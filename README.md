@@ -10,7 +10,7 @@ For a full description of the differences between Promises/A+ and Promises/A, se
 
 1. "value" is any legal language value, including `undefined`, that is not a promise.
 1. "reason" is a value. The term "reason" is used here because it is used in existing promise literature, and helps to reinforce the difference between fulfilled and rejected promise states. It also conveys the intent that a reason should represent the "reason the associated promise has been rejected."
-1. "must not change" means immutable identity (e.g. `===`), and does not imply deep immutability.
+1. "must not change" means immutable identity (i.e. `===`), and does not imply deep immutability.
 
 ## Requirements
 
@@ -67,7 +67,7 @@ A promise is an object or function that defines a `then` method that accepts the
 
 1. In practical terms, an implementation must use a mechanism such as `setTimeout`, or a faster alternative, where available, such as `setImmediate` or `process.nextTick`, to ensure that `onFulfilled` or `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
 
-1. Each implementation should document whether it may produce `promise2` === `promise1`, and if so, under what conditions.  It is intentionally not specified as to whether the returned promise may be the same promise, or must be a new promise, i.e. `promise2` !== `promise1` is not a requirement.  An implemention is free to allow `promise2` === `promise1`, provided it can meet the requirements in this section.
+1. Each implementation should document whether it may produce `promise2 === promise1`, and if so, under what conditions.  It is intentionally not specified as to whether the returned promise may be the same promise, or must be a new promise, i.e. `promise2 !== promise1` is not a requirement.  An implemention is free to allow `promise2 === promise1`, provided it can meet the requirements in this section.
 
 ---
 
