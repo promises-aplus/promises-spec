@@ -1,3 +1,8 @@
+---
+layout: default
+title: Promises/A+
+---
+
 # Promises/A+
 
 This proposal attempts to clarify the behavioral clauses of the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A), to extend it to cover *de facto* behaviors, and to omit parts that have proven to be underspecified or problematic.
