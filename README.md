@@ -48,8 +48,8 @@ A promise is an object or function that defines a `then` method that accepts the
     1. it must not be called more than once.
     1. it must not be called if `onFulfilled` has already been called.
 1. `onFulfilled` and `onRejected` must not be called before `then` returns [[1](#notes)].
-1. `onFulfilled` and `onRejected` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
 1. `then` may be called any number of times.
+    1. `onFulfilled` and `onRejected` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
 1. `then` must return a promise [[2](#notes)]
 
         var promise2 = promise1.then(onFulfilled, onRejected)
