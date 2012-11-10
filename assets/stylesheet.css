@@ -260,7 +260,7 @@ body {
   background: #f2f2f2;
   border-bottom: 1px solid #111;
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 720px;
   padding: 0 10px 50px 10px;
 }
 
@@ -348,14 +348,16 @@ h3::before {
 ol {
   counter-reset: li;
 }
-
 ol li {
   list-style-type: none;
   counter-increment: li;
+  margin-left: 1.5em;
 }
 ol li::before {
-  display: inline;
   float: left;
+  margin-left: -4.5em;
+  width: 4.5em;
+  text-align: right;
 }
 h2 ~ ol li::before, h3 ~ h2 ~ ol li::before {
   content: counter(h2)"."counters(li, ".")".\A0";
