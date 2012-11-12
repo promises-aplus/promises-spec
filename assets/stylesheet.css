@@ -252,8 +252,19 @@ h1 {
   font-size: 42px;
   font-weight: 700;
   margin: 0 0 40px 0;
-  padding: 50px 10px 30px 10px;
+  padding: 50px 10px 30px 139px;
   text-shadow: #111 0px 0px 10px;
+  position: relative;
+}
+h1:before {
+  content: '';
+  display: inline-block;
+  width: 82px;
+  height: 82px;
+  background: url(logo-small.png);
+  position: absolute;
+  left: 30px;
+  top: 30px;
 }
 
 body {
