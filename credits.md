@@ -25,3 +25,7 @@ The following people assembled and contributed to the concepts and content in Pr
 * Yehuda Katz ([@wycats](https://github.com/wycats))
 * Kris Kowal ([@kriskowal](https://github.com/kriskowal))
 * Luke Smith ([@lsmith](https://github.com/lsmith))
+
+## Logo
+
+* Promises/A+ logo by Juan Ignacio Dopazo ([@juandopazo](https://github.com/juandopazo))
