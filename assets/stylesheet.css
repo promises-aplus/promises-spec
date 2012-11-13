@@ -58,7 +58,7 @@ html {
   box-sizing: border-box;
   color:#373737;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color: #333333;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   letter-spacing: -1px;
 }
 
