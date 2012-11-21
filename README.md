@@ -8,6 +8,7 @@ For a full description of the differences between Promises/A+ and Promises/A, se
 
 ## Terminology
 
+1. "promise" is an object or function that defines a `then` method.
 1. "value" is any legal language value, including `undefined`, that is not a promise.
 1. "reason" is a value. The term "reason" is used here because it is used in existing promise literature, and helps to reinforce the difference between fulfilled and rejected promise states. It also conveys the intent that a reason should represent the "reason the associated promise has been rejected."
 1. "must not change" means immutable identity (i.e. `===`), and does not imply deep immutability.
@@ -32,7 +33,7 @@ A promise represents a value that may not be available yet.  A promise must be o
 
 ### Specific
 
-A promise is an object or function that defines a `then` method that accepts the following two arguments:
+A promise's `then` method accepts the following two arguments:
 
     promise.then(onFulfilled, onRejected)
 
