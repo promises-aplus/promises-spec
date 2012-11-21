@@ -35,7 +35,9 @@ A promise represents a value that may not be available yet.  A promise must be o
 
 A promise's `then` method accepts the following two arguments:
 
-    promise.then(onFulfilled, onRejected)
+```js
+promise.then(onFulfilled, onRejected)
+```
 
 1. Both `onFulfilled` and `onRejected` are optional arguments:
     1. If `onFulfilled` is not a function, it must be ignored.
@@ -53,7 +55,9 @@ A promise's `then` method accepts the following two arguments:
     1. `onFulfilled` and `onRejected` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
 1. `then` must return a promise [[2](#notes)]
 
-        var promise2 = promise1.then(onFulfilled, onRejected)
+   ```js
+   var promise2 = promise1.then(onFulfilled, onRejected);
+   ```
 
     1. If `onFulfilled` is not a function and `promise1` is fufilled, `promise2` must be fulfilled with the same fulfillment value.
     1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
