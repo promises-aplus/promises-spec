@@ -10,7 +10,7 @@ For a full description of the differences between Promises/A+ and Promises/A, se
 
 1. "promise" is an object or function that defines a `then` method.
 1. "value" is any legal language value, including `undefined`, that is not a promise.
-1. "reason" is a value. The term "reason" is used here because it is used in existing promise literature, and helps to reinforce the difference between fulfilled and rejected promise states. It also conveys the intent that a reason should represent the "reason the associated promise has been rejected."
+1. "reason" is a value. The term "reason" is used here to reinforce the difference between fulfilled and rejected promise states; it conveys the intent that a reason represents why the associated promise has been rejected.
 1. "must not change" means immutable identity (i.e. `===`), and does not imply deep immutability.
 
 ## Requirements
