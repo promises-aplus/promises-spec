@@ -8,8 +8,9 @@ For a full description of the differences between Promises/A+ and Promises/A, se
 
 ## Terminology
 
+1. "promise" is an object or function that defines a `then` method.
 1. "value" is any legal language value, including `undefined`, that is not a promise.
-1. "reason" is a value. The term "reason" is used here because it is used in existing promise literature, and helps to reinforce the difference between fulfilled and rejected promise states. It also conveys the intent that a reason should represent the "reason the associated promise has been rejected."
+1. "reason" is a value. The term "reason" is used here to reinforce the difference between fulfilled and rejected promise states; it conveys the intent that a reason represents why the associated promise has been rejected.
 1. "must not change" means immutable identity (i.e. `===`), and does not imply deep immutability.
 
 ## Requirements
@@ -32,9 +33,11 @@ A promise represents a value that may not be available yet.  A promise must be o
 
 ### Specific
 
-A promise is an object or function that defines a `then` method that accepts the following two arguments:
+A promise's `then` method accepts the following two arguments:
 
-    promise.then(onFulfilled, onRejected)
+```js
+promise.then(onFulfilled, onRejected)
+```
 
 1. Both `onFulfilled` and `onRejected` are optional arguments:
     1. If `onFulfilled` is not a function, it must be ignored.
@@ -52,7 +55,9 @@ A promise is an object or function that defines a `then` method that accepts the
     1. `onFulfilled` and `onRejected` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
 1. `then` must return a promise [[2](#notes)]
 
-        var promise2 = promise1.then(onFulfilled, onRejected)
+   ```js
+   var promise2 = promise1.then(onFulfilled, onRejected);
+   ```
 
     1. If `onFulfilled` is not a function and `promise1` is fufilled, `promise2` must be fulfilled with the same fulfillment value.
     1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
