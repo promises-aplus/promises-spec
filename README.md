@@ -47,16 +47,16 @@ promise.then(onFulfilled, onRejected)
     1. If `onFulfilled` is not a function, it must be ignored.
     1. If `onRejected` is not a function, it must be ignored.
 1. If `onFulfilled` is a function,
-    1. it must be called after `promise` is fulfilled, with `promise`'s value as its first argument.
+    1. it must be called after `promise` is fulfilled, with `promise`'s fulfillment value as its first argument.
     1. it must not be called more than once.
-    1. it must not be called if `onRejected` has already been called.
+    1. it must not be called if `onRejected` has been called.
 1. If `onRejected` is a function,
-    1. it must be called after `promise` is rejected, with `promise`'s reason as its first argument.
+    1. it must be called after `promise` is rejected, with `promise`'s rejection reason as its first argument.
     1. it must not be called more than once.
-    1. it must not be called if `onFulfilled` has already been called.
+    1. it must not be called if `onFulfilled` has been called.
 1. `onFulfilled` and `onRejected` must not be called before `then` returns [[1](#notes)].
 1. `then` may be called any number of times.
-    1. `onFulfilled` and `onRejected` supplied in one call to `then` must never be called after those supplied to a later call to `then` on the same promise.
+    1. `onFulfilled` and `onRejected` supplied in one call to `then` must never be called after those supplied to a later call to `then`.
 1. `then` must return a promise [[2](#notes)]
 
 ### Promise Chaining
@@ -68,13 +68,11 @@ var promise2 = promise1.then(onFulfilled, onRejected);
 1. If either `onFulfilled` or `onRejected` returns a value, `promise2` must be fulfilled with that value.
 1. If either `onFulfilled` or `onRejected` throws an exception, `promise2` must be rejected with the thrown exception as the reason.
 1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must be placed into the same state as `returnedPromise`:
-    1. If `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
-    1. If `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
-    1. If `returnedPromise` is pending, `promise2` must also be pending.
-        1. If `returnedPromise` transitions to fulfilled, `promise2` must be fulfilled with `returnedPromise`'s fulfillment value.
-        1. If `returnedPromise` transitions to rejected, `promise2` must be rejected with `returnedPromise`'s rejection reason.
-1. If `onFulfilled` is not a function and `promise1` is fufilled, `promise2` must be fulfilled with `promise1`'s fulfillment value.
-1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with `promise1`'s rejection reason.
+    1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
+    1. If/when `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
+    1. If/when `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
+1. If `onFulfilled` is not a function and `promise1` is fufilled, `promise2` must be fulfilled with the same value.
+1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
 
 ## Notes
 
