@@ -24,25 +24,20 @@ A promise represents a value that may not be available yet. The primary method f
 1. A promise must be in one of three states: pending, fulfilled, or rejected.
 1. When in pending:
     1. a promise may transition to either the fulfilled or rejected state.
-    1. if the promise transitions to fulfilled, it must provide you a way to call a function with the promise's fulfillment value. 
-    1. if the promise transitions to rejected, it must provide you a way to call a function with the promise's reason value. 
 1. When in fulfilled:
     1. a promise must not transition to any other state.
     1. a promise must have a value, which must not change.
-    1. a promise must provide you a way to call a function with the promise's fulfillment value.
 1. When in rejected:
-    1. must not transition to any other state.
+    1. a promise must not transition to any other state.
     1. a promise must have a reason, which must not change.
-    1. a promise must provide you a way to call a function with the promise's reason value.
 
 ### The `then` Method
 
-A promise's `then` method accepts the following two arguments:
-
+1. A promise must provide a `then` method to access its current or eventual fulfillment value or rejection reason.
+1. A promise's `then` method accepts two arguments:
 ```
 promise.then(onFulfilled, onRejected)
 ```
-
 1. Both `onFulfilled` and `onRejected` are optional arguments:
     1. If `onFulfilled` is not a function, it must be ignored.
     1. If `onRejected` is not a function, it must be ignored.
@@ -54,10 +49,10 @@ promise.then(onFulfilled, onRejected)
     1. it must be called after `promise` is rejected, with `promise`'s rejection reason as its first argument.
     1. it must not be called more than once.
     1. it must not be called if `onFulfilled` has been called.
-1. `onFulfilled` and `onRejected` must not be called before `then` returns [[1](#notes)].
-1. Calling `then` must return a promise [[2](#notes)]
-1. You may call `then` multiple times.
-    1. If you supply `onFulfilled` or `onRejected` to a call to `then`, these callbacks must execute *before* any `onFulfilled` or `onRejected` functions supplied to subsequent `then` calls.
+1. `then` must return before `onFulfilled` or `onRejected` is called [[1](#notes)].
+1. `then` must return a promise [[2](#notes)].
+1. `then` may be called multiple times on the same promise.
+    1. `onFulfilled` and `onRejected` must execute in the order of their originating calls to `then`.
 
 ### Promise Chaining
 
@@ -67,19 +62,18 @@ var promise2 = promise1.then(onFulfilled, onRejected);
 
 1. If either `onFulfilled` or `onRejected` returns a value, `promise2` must be fulfilled with that value.
 1. If either `onFulfilled` or `onRejected` throws an exception, `promise2` must be rejected with the thrown exception as the reason.
-1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must be placed into the same state as `returnedPromise`:
+1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must assume the state of `returnedPromise`:
     1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
-    1. If `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
-    1. If `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
+    1. If/when `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
+    1. If/when `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
 1. If `onFulfilled` is not a function and `promise1` is fufilled, `promise2` must be fulfilled with the same value.
 1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
 
 ## Notes
 
-1. In practical terms, an implementation must use a mechanism such as `setTimeout`, or faster alternatives such as `setImmediate` or `process.nextTick`, 
-   to ensure that the JS engine does not invoke `onFulfilled` and `onRejected` in the same turn of the event loop as their parent `then` call.
+1. In practical terms, an implementation must use a mechanism such as `setTimeout`, `setImmediate`, or `process.nextTick` to ensure that `onFulfilled` and `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
 
-1. Implementations are free to allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions. 
+1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions. 
 
 ---
 
