@@ -8,8 +8,7 @@ For a full description of the differences between Promises/A+ and Promises/A, se
 
 ## General
 
-A promise represents a value that may not be available yet.  
-The primary method for interacting with a promise is its `then` method.
+A promise represents a value that may not be available yet. The primary method for interacting with a promise is its `then` method.
 
 ## Terminology
 
