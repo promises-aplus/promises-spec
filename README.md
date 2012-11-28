@@ -55,20 +55,16 @@ promise.then(onFulfilled, onRejected)
 1. `then` may be called multiple times on the same promise.
     1. If `promise` is fulfilled, respective `onFulfilled` callbacks must execute in the order of their originating calls to `then`.
     1. If `promise` is rejected, respective `onRejected` callbacks must execute in the order of their originating calls to `then`.
-
-### Promise Chaining
-
-```
-var promise2 = promise1.then(onFulfilled, onRejected);
-```
-
 1. `then` must return a promise [[2](#notes)].
-1. If either `onFulfilled` or `onRejected` returns a value, `promise2` must be fulfilled with that value.
-1. If either `onFulfilled` or `onRejected` throws an exception, `promise2` must be rejected with the thrown exception as the reason.
-1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must assume the state of `returnedPromise`:
-    1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
-    1. If/when `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
-    1. If/when `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
+    ```
+    promise2 = promise1.then(onFulfilled, onRejected);
+    ```
+    1. If either `onFulfilled` or `onRejected` returns a value, `promise2` must be fulfilled with that value.
+    1. If either `onFulfilled` or `onRejected` throws an exception, `promise2` must be rejected with the thrown exception as the reason.
+    1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must assume the state of `returnedPromise`:
+        1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
+        1. If/when `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
+        1. If/when `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
 1. If `onFulfilled` is not a function and `promise1` is fulfilled, `promise2` must be fulfilled with the same value.
 1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
 
