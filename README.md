@@ -56,6 +56,7 @@ promise.then(onFulfilled, onRejected)
     1. If `promise` is fulfilled, respective `onFulfilled` callbacks must execute in the order of their originating calls to `then`.
     1. If `promise` is rejected, respective `onRejected` callbacks must execute in the order of their originating calls to `then`.
 1. `then` must return a promise [[2](#notes)].
+
     ```
     promise2 = promise1.then(onFulfilled, onRejected);
     ```
@@ -65,8 +66,8 @@ promise.then(onFulfilled, onRejected)
         1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
         1. If/when `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
         1. If/when `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
-1. If `onFulfilled` is not a function and `promise1` is fulfilled, `promise2` must be fulfilled with the same value.
-1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
+    1. If `onFulfilled` is not a function and `promise1` is fulfilled, `promise2` must be fulfilled with the same value.
+    1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
 
 ## Notes
 
