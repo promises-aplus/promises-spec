@@ -13,7 +13,7 @@ A promise represents a value that may not be available yet. The primary method f
 ## Terminology
 
 1. "promise" is an object or function that defines a `then` method.
-1. "value" is any legal JavaScript value, including `undefined`, that is not a promise.
+1. "value" is any legal JavaScript value (including `undefined` or a promise).
 1. "reason" is a value that indicates why a promise was rejected.
 1. "must not change" means immutable identity (i.e. `===`), but does not imply deep immutability.
 
@@ -61,7 +61,7 @@ promise.then(onFulfilled, onRejected)
     ```
     promise2 = promise1.then(onFulfilled, onRejected);
     ```
-    1. If either `onFulfilled` or `onRejected` returns a value, `promise2` must be fulfilled with that value.
+    1. If either `onFulfilled` or `onRejected` returns a value that is not a promise, `promise2` must be fulfilled with that value.
     1. If either `onFulfilled` or `onRejected` throws an exception, `promise2` must be rejected with the thrown exception as the reason.
     1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must assume the state of `returnedPromise`:
         1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
