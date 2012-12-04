@@ -63,7 +63,7 @@ promise.then(onFulfilled, onRejected)
     ```
     1. If either `onFulfilled` or `onRejected` returns a value, `promise2` must be fulfilled with that value.
     1. If either `onFulfilled` or `onRejected` throws an exception, `promise2` must be rejected with the thrown exception as the reason.
-    1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must assume the state of `returnedPromise`:
+    1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must assume the state of `returnedPromise` [[3](#notes)]:
         1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
         1. If/when `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
         1. If/when `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
@@ -74,7 +74,13 @@ promise.then(onFulfilled, onRejected)
 
 1. In practical terms, an implementation must use a mechanism such as `setTimeout`, `setImmediate`, or `process.nextTick` to ensure that `onFulfilled` and `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
 
-1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions. 
+1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions.
+
+1. The mechanism by which `promise2` assumes the state of `returnedPromise` is not specified.  One reasonable approach is to call `returnedPromise.then(fulfillPromise2, rejectPromise2)`, where:
+    1. `fulfillPromise2` is a function which fulfills `promise2` with its first parameter.
+    1. `rejectPromise2` is a function which rejects `promise2` with its first parameter.
+
+    Given that `returnedPromise` may not be Promises/A+-compliant, but could instead be any object with a `then` method, it isn't always possible to satisfy the requirement of `promise2` assuming the same state as `returnedPromise`. Thus, the procedure here represents a best-faith effort.
 
 ---
 
