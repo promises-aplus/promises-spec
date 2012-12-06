@@ -42,9 +42,11 @@ A promise must be in one of three states: pending, fulfilled, or rejected.
 A promise must provide a `then` method to access its current or eventual fulfillment value or rejection reason.
 
 A promise's `then` method accepts two arguments:
+
 ```
 promise.then(onFulfilled, onRejected)
 ```
+
 1. Both `onFulfilled` and `onRejected` are optional arguments:
     1. If `onFulfilled` is not a function, it must be ignored.
     1. If `onRejected` is not a function, it must be ignored.
