@@ -29,11 +29,16 @@ A promise represents a value that may not be available yet. The primary method f
 A promise must be in one of three states: pending, fulfilled, or rejected.
 
 1. When in pending, a promise:
+
     1. may transition to either the fulfilled or rejected state.
+
 1. When in fulfilled, a promise:
+
     1. must not transition to any other state.
     1. must have a value, which must not change.
+
 1. When in rejected, a promise:
+
     1. must not transition to any other state.
     1. must have a reason, which must not change.
 
