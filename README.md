@@ -69,8 +69,13 @@ promise.then(onFulfilled, onRejected)
     ```
 
     1. If either `onFulfilled` or `onRejected` returns a value that is not a promise, `promise2` must be fulfilled with that value.
-    1. If either `onFulfilled` or `onRejected` throws an exception, `promise2` must be rejected with the thrown exception as the reason.
-    1. If either `onFulfilled` or `onRejected` returns a promise (call it `returnedPromise`), `promise2` must assume the state of `returnedPromise` [[4.3](#notes)]:
+    1. If either `onFulfilled` or `onRejected` throws an exception (let `e` be the exception):
+        1. if `e` is not a promise, `promise2` must be rejected, with `e` as its reason.
+        1. If `e` is a promise:
+            1. If `e` is pending, `promise2` must remain pending until `e` is fulfilled or rejected.
+            1. If/when `e` is fulfilled, `promise2` must be rejected, with `e`'s value as its reason.
+            1. If/when `e` is rejected, `promise2` must be rejected, with `e`'s reason as its reason.
+    1. If either `onFulfilled` or `onRejected` returns a promise (let `returnedPromise` be the returned promise), `promise2` must assume the state of `returnedPromise` [[4.3](#notes)]:
         1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
         1. If/when `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
         1. If/when `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
