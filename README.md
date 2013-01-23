@@ -15,6 +15,7 @@ A promise represents a value that may not be available yet. The primary method f
 1. "promise" is an object or function that defines a `then` method.
 1. "value" is any legal JavaScript value (including `undefined` or a promise).
 1. "reason" is a value that indicates why a promise was rejected.
+1. "exception" is a value that has been thrown.
 1. "must not change" means immutable identity (i.e. `===`), but does not imply deep immutability.
 
 ## Requirements
@@ -68,18 +69,18 @@ promise.then(onFulfilled, onRejected)
     promise2 = promise1.then(onFulfilled, onRejected);
     ```
 
-    1. If either `onFulfilled` or `onRejected` returns a value (let `v` be the value):
-        1. If `v` is not a promise, `promise2` must be fulfilled, with `v` as its fulfillment value.
-        1. If `v` is a promise:
-            1. If `v` is pending, `promise2` must remain pending until `v` is fulfilled or rejected.
-            1. If/when `v` is fulfilled, `promise2` must be fulfilled with `v`'s fulfillment value.
-            1. If/when `v` is rejected, `promise2` must be rejected with `v`'s rejection reason.
-    1. If either `onFulfilled` or `onRejected` throws an exception (let `e` be the exception):
-        1. if `e` is not a promise, `promise2` must be rejected, with `e` as its rejection reason.
-        1. If `e` is a promise:
-            1. If `e` is pending, `promise2` must remain pending until `e` is fulfilled or rejected.
-            1. If/when `e` is fulfilled, `promise2` must be rejected with `e`'s fulfillment value.
-            1. If/when `e` is rejected, `promise2` must be rejected with `e`'s rejection reason.
+    1. If either `onFulfilled` or `onRejected` returns a value (let `x` be the value):
+        1. If `x` is not a promise, `promise2` must be fulfilled, with `x` as its fulfillment value.
+        1. If `x` is a promise, `promise2` must assume the same state as `x` [[4.3](#notes)]. Specifically:
+            1. If `x` is pending, `promise2` must remain pending until `x` is fulfilled or rejected.
+            1. If/when `x` is fulfilled, `promise2` must be fulfilled with `x`'s fulfillment value.
+            1. If/when `x` is rejected, `promise2` must be rejected with `x`'s rejection reason.
+    1. If either `onFulfilled` or `onRejected` throws an exception (let `x` be the exception):
+        1. if `x` is not a promise, `promise2` must be rejected, with `x` as its rejection reason.
+        1. If `x` is a promise, `promise2` must assume the same state as `x` [[4.3](#notes)]. Specifically:
+            1. If `x` is pending, `promise2` must remain pending until `x` is fulfilled or rejected.
+            1. If/when `x` is fulfilled, `promise2` must be rejected with `x`'s fulfillment value.
+            1. If/when `x` is rejected, `promise2` must be rejected with `x`'s rejection reason.
     1. If `onFulfilled` is not a function and `promise1` is fulfilled, `promise2` must be fulfilled with the same value.
     1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
 
@@ -89,11 +90,11 @@ promise.then(onFulfilled, onRejected)
 
 1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions.
 
-1. The mechanism by which `promise2` assumes the state of `returnedPromise` is not specified.  One reasonable approach is to call `returnedPromise.then(fulfillPromise2, rejectPromise2)`, where:
+1. The mechanism by which `promise2` assumes the state of `x` is not specified.  One reasonable approach is to call `x.then(fulfillPromise2, rejectPromise2)`, where:
     1. `fulfillPromise2` is a function which fulfills `promise2` with its first parameter.
     1. `rejectPromise2` is a function which rejects `promise2` with its first parameter.
 
-    Given that `returnedPromise` may not be Promises/A+-compliant, but could instead be any object with a `then` method, it isn't always possible to satisfy the requirement of `promise2` assuming the same state as `returnedPromise`. Thus, the procedure here represents a best-faith effort.
+    Given that `x` may not be Promises/A+-compliant, but could instead be any object with a `then` method, it isn't always possible to satisfy the requirement of `promise2` assuming the same state as `x`. Thus, the procedure here represents a best-faith effort.
 
 ---
 
