@@ -60,8 +60,8 @@ promise.then(onFulfilled, onRejected)
     1. it must not be called if `onFulfilled` has been called.
 1. `then` must return before `onFulfilled` or `onRejected` is called [[4.1](#notes)].
 1. `then` may be called multiple times on the same promise.
-    1. If/when `promise` is fulfilled, respective `onFulfilled` callbacks must execute in the order of their originating calls to `then`.
-    1. If/when `promise` is rejected, respective `onRejected` callbacks must execute in the order of their originating calls to `then`.
+    1. If/when `promise` is fulfilled, all respective `onFulfilled` callbacks must execute in the order of their originating calls to `then`.
+    1. If/when `promise` is rejected, all respective `onRejected` callbacks must execute in the order of their originating calls to `then`.
 1. `then` must return a promise [[4.2](#notes)].
 
     ```
