@@ -17,7 +17,6 @@ A promise represents a value that may not be available yet. The primary method f
 1. "value" is any legal JavaScript value (including `undefined` or a promise).
 1. "exception" is a value that is thrown using the `throw` statement.
 1. "reason" is a value that indicates why a promise was rejected.
-1. "must not change" means immutable identity (i.e. `===`), but does not imply deep immutability.
 
 ## Requirements
 
@@ -38,6 +37,8 @@ A promise must be in one of three states: pending, fulfilled, or rejected.
 
     1. must not transition to any other state.
     1. must have a rejection reason, which must not change.
+
+Here, "must not change" means immutable identity (i.e. `===`), but does not imply deep immutability.
 
 ### The `then` Method
 
