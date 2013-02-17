@@ -74,12 +74,31 @@ promise.then(onFulfilled, onRejected)
 
     1. If either `onFulfilled` or `onRejected` returns a value that is not a thenable, `promise2` must be fulfilled with that value.
     1. If either `onFulfilled` or `onRejected` throws an exception, `promise2` must be rejected with the thrown exception as the reason.
-    1. If either `onFulfilled` or `onRejected` returns a thenable (call it `returnedThenable`), `promise2` must attempt to adopt the state of `returnedThenable` under the assumption of it being a promise [[4.4](#notes)]:
-        1. If `returnedThenable` is pending, `promise2` must remain pending until `returnedThenable` is fulfilled or rejected.
-        1. If/when `returnedThenable` is fulfilled, `promise2` must be fulfilled with the same value.
-        1. If/when `returnedThenable` is rejected, `promise2` must be rejected with the same reason.
+    1. If either `onFulfilled` or `onRejected` returns a thenable (call it `returnedThenable`), run the Thenable Assimilation Procedure `Assimilate(promise2, returnedThenable)`.
     1. If `onFulfilled` is not a function and `promise1` is fulfilled, `promise2` must be fulfilled with the same value.
     1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
+
+### The Thenable Assimilation Procedure
+
+The **thenable assimilation procedure** is an abstract operation taking as input a thenable and a promise, which we denote as `Assimilate(promise, thenable)`. It attempts to make `promise` adopt the state of `thenable`, under the assumption that `thenable` behaves at least somewhat like a promise.
+
+This allows promise implementations to interoperate, as long as they expose a Promises/A+-compliant `then` method. It also allows Promises/A+ implementations to "assimilate" nonconformant implementations with reasonable `then` methods.
+
+To run `Assimilate(promise, thenable)`, perform the following steps:
+
+1. If `thenable` is a promise, adopt its state [[4.4](#notes)]:
+   1. If `thenable` is pending, `promise` must remain pending until `thenable` is fulfilled or rejected.
+   1. If/when `thenable` is fulfilled, `promise` must be fulfilled with the same value.
+   1. If/when `thenable` is rejected, `promise` must be rejected with the same reason.
+1. Otherwise, call `thenable.then(resolvePromise, rejectPromise)`, where:
+   1. If/when `resolvePromise` is called with a value `x`,
+      1. If `x` is not a thenable, `promise` must be fulfilled with `x`.
+      1. If `x` is a thenable, run `Assimilate(promise, x)`.
+  1. If/when `rejectPromise` is called with a reason `reason`, `promise` must be rejected with `reason`.
+  1. If both `resolvePromise` and `rejectPromise` are called, or multiple calls to the same argument are made, the first call takes precendence, and any further calls are ignored.
+  1. If the call to `thenable.then` throws an exception,
+     1. If `resolvePromise` or `rejectPromise` have been called, ignore it.
+     1. Otherwise, `promise` must be rejected with the thrown exception as the reason.
 
 ## Notes
 
@@ -89,11 +108,7 @@ promise.then(onFulfilled, onRejected)
 
 1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions.
 
-1. The mechanism by which `promise2` adopts the state of `returnedThenable` is not specified. One reasonable approach is to call `returnedThenable.then(fulfillPromise2, rejectPromise2)`, where:
-    1. `fulfillPromise2` is a function which fulfills `promise2` with its first parameter.
-    1. `rejectPromise2` is a function which rejects `promise2` with its first parameter.
-
-    Given that `returnedThenable` may not be a promise, but could instead be any thenable, it isn't always possible to satisfy the requirement of `promise2` adopting the same state as `returnedThenable`. Thus, the procedure here represents a best-faith effort.
+1. Generally, it will only be known that `thenable` is a true promise if it comes from the current implementation. This clause allows the use of implementation-specific means to adopt the state of known-conformant promises.
 
 ---
 
