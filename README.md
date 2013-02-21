@@ -85,7 +85,7 @@ promise.then(onFulfilled, onRejected)
 
 1. In practical terms, an implementation must use a mechanism such as `setTimeout`, `setImmediate`, or `process.nextTick` to ensure that `onFulfilled` and `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
 
-1. That is, in strict mode `this` will be undefined inside of them; in sloppy mode, it will be the global object.
+1. That is, in strict mode `this` will be `undefined` inside of them; in sloppy mode, it will be the global object.
 
 1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions.
 
