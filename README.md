@@ -4,7 +4,7 @@ This proposal clarifies the behavioral clauses of the [Promises/A proposal](http
 
 As with Promises/A, this proposal does not deal with how to create, fulfill, or reject promises.
 
-For a full description of the differences between Promises/A+ and Promises/A, see [Differences from Promises/A](promises-spec/blob/master/differences-from-promises-a.md).
+For a full description of the differences between Promises/A+ and Promises/A, see [Differences from Promises/A](differences-from-promises-a.md).
 
 ## General
 
