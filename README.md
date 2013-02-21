@@ -46,7 +46,7 @@ A promise must provide a `then` method to access its current or eventual fulfill
 
 A promise's `then` method accepts two arguments:
 
-```
+```js
 promise.then(onFulfilled, onRejected)
 ```
 
@@ -68,7 +68,7 @@ promise.then(onFulfilled, onRejected)
     1. If/when `promise` is rejected, all respective `onRejected` callbacks must execute in the order of their originating calls to `then`.
 1. `then` must return a promise [[4.3](#notes)].
 
-    ```
+    ```js
     promise2 = promise1.then(onFulfilled, onRejected);
     ```
 
