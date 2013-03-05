@@ -40,6 +40,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>A Promises/A+ conformant implementation, written for mongoose</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/val1984/Naive-Promesse">Naive Promesse</a></td>
+            <td>Naïve implementation of Promises/A+ specification</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a></td>
             <td>From the Orion library</td>
         </tr>
