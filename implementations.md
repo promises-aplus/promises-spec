@@ -28,6 +28,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>Promises/A+ compliant implementation in object-oriented CoffeeScript</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/CodeCatalyst/promise-as3">CodeCatalyst/promise-as3</a></td>
+            <td>Promises/A+ compliant implementation in ActionScript 3.0</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kaerus/promise.js">kaerus/promise.js</a></td>
             <td>A Promises/A+ library, originally developed for the ArangoDB client</td>
         </tr>
@@ -46,6 +50,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         <tr>
             <td><a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a></td>
             <td>From the Orion library</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/rkatic/p">P</a></td>
+            <td>A simple Promises/A+ library, implementing a subset of the the Q API.</td>
         </tr>
         <tr>
             <td><a href="https://github.com/timjansen/PinkySwear.js">PinkySwear.js</a></td>
