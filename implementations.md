@@ -32,6 +32,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>Promises/A+ compliant implementation in ActionScript 3.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/shanewholloway/node-fate">fate</a></td>
+            <td>Promises/A+ closure-based implementation</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kaerus/promise.js">kaerus/promise.js</a></td>
             <td>A Promises/A+ library, originally developed for the ArangoDB client</td>
         </tr>
