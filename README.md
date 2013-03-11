@@ -90,7 +90,7 @@ To run `Assimilate(promise, thenable)`, perform the following steps:
    1. If `thenable` is pending, `promise` must remain pending until `thenable` is fulfilled or rejected.
    1. If/when `thenable` is fulfilled, `promise` must be fulfilled with the same value.
    1. If/when `thenable` is rejected, `promise` must be rejected with the same reason.
-1. Otherwise, call `thenable.then(resolvePromise, rejectPromise)`, where:
+1. Otherwise, call `thenable.then` with first argument `resolvePromise` and second argument `rejectPromise`, where:
    1. If/when `resolvePromise` is called with a value `x`,
       1. If `x` is not a thenable, `promise` must be fulfilled with `x`.
       1. If `x` is a thenable, run `Assimilate(promise, x)`.
