@@ -91,6 +91,7 @@ To run `Resolve(promise, x)`, perform the following steps:
    1. If/when `x` is rejected, reject `promise` with the same reason.
 1. Otherwise, if `x` is an object or function,
    1. Let `then` be `x.then`. [[4.5](#notes)]
+   1. If retrieving the property `x.then` results in a thrown exception `e`, reject `promise` with `e` as the reason.
    1. If `then` is a function, call it with `x` as `this`, first argument `resolvePromise`, and second argument `rejectPromise`, where:
       1. If/when `resolvePromise` is called with a value `y`, run `Resolve(promise, y)`.
       1. If/when `rejectPromise` is called with a reason `r`, reject `promise` with `r`.
