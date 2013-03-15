@@ -14,7 +14,7 @@ A promise represents a value that may not be available yet. The primary method f
 
 1. "promise" is an object or function with a `then` method whose behavior conforms to this specification.
 1. "thenable" is an object or function that defines a `then` method.
-1. "value" is any legal JavaScript value (including `undefined` or a promise).
+1. "value" is any legal JavaScript value (including `undefined`, a thenable, or a promise).
 1. "exception" is a value that is thrown using the `throw` statement.
 1. "reason" is a value that indicates why a promise was rejected.
 
@@ -90,12 +90,12 @@ To run `Assimilate(promise, thenable)`, perform the following steps:
    1. If `thenable` is pending, `promise` must remain pending until `thenable` is fulfilled or rejected.
    1. If/when `thenable` is fulfilled, `promise` must be fulfilled with the same value.
    1. If/when `thenable` is rejected, `promise` must be rejected with the same reason.
-1. Otherwise, call `thenable.then` with first argument `resolvePromise` and second argument `rejectPromise`, where:
+1. Otherwise, call `thenable.then` with `thenable` as `this`, first argument `resolvePromise`, and second argument `rejectPromise`, where:
    1. If/when `resolvePromise` is called with a value `x`,
       1. If `x` is not a thenable, `promise` must be fulfilled with `x`.
       1. If `x` is a thenable, run `Assimilate(promise, x)`.
   1. If/when `rejectPromise` is called with a reason `reason`, `promise` must be rejected with `reason`.
-  1. If both `resolvePromise` and `rejectPromise` are called, or multiple calls to the same argument are made, the first call takes precendence, and any further calls are ignored.
+  1. If both `resolvePromise` and `rejectPromise` are called, or multiple calls to the same argument are made, the first call takes precedence, and any further calls are ignored.
   1. If the call to `thenable.then` throws an exception,
      1. If `resolvePromise` or `rejectPromise` have been called, ignore it.
      1. Otherwise, `promise` must be rejected with the thrown exception as the reason.
