@@ -96,6 +96,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>Promises/A+ implementation</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/cujojs/when">when</a></td>
+            <td>Cujo.js's promise implementation and async toolkit</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
         </tr>
