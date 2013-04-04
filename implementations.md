@@ -64,6 +64,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>A simple Promises/A+ library, implementing a subset of the the Q API.</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/lazd/Pinky">Pinky</a></td>
+            <td>An extremely tiny Promises/A+ implementation that passes the Promises/A+ test suite</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/timjansen/PinkySwear.js">PinkySwear.js</a></td>
             <td>Promises/A+ compliant in less than 400 bytes</td>
         </tr>
