@@ -72,18 +72,18 @@ promise.then(onFulfilled, onRejected)
     promise2 = promise1.then(onFulfilled, onRejected);
     ```
 
-    1. If either `onFulfilled` or `onRejected` returns a value `x`, run the Promise Resolution Procedure `Resolve(promise2, x)`.
+    1. If either `onFulfilled` or `onRejected` returns a value `x`, run the Promise Resolution Procedure `[[Resolve]](promise2, x)`.
     1. If either `onFulfilled` or `onRejected` throws an exception `e`, `promise2` must be rejected with `e` as the reason.
     1. If `onFulfilled` is not a function and `promise1` is fulfilled, `promise2` must be fulfilled with the same value.
     1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
 
 ### The Promise Resolution Procedure
 
-The **promise resolution procedure** is an abstract operation taking as input a promise and a value, which we denote as `Resolve(promise, x)`. If `x` is a thenable, it attempts to make `promise` adopt the state of `x`, under the assumption that `x` behaves at least somewhat like a promise. Otherwise, it fulfills `promise` with the value `x`.
+The **promise resolution procedure** is an abstract operation taking as input a promise and a value, which we denote as `[[Resolve]](promise, x)`. If `x` is a thenable, it attempts to make `promise` adopt the state of `x`, under the assumption that `x` behaves at least somewhat like a promise. Otherwise, it fulfills `promise` with the value `x`.
 
 This treatment of thenables allows promise implementations to interoperate, as long as they expose a Promises/A+-compliant `then` method. It also allows Promises/A+ implementations to "assimilate" nonconformant implementations with reasonable `then` methods.
 
-To run `Resolve(promise, x)`, perform the following steps:
+To run `[[Resolve]](promise, x)`, perform the following steps:
 
 1. If `x` is a promise, adopt its state [[4.4](#notes)]:
    1. If `x` is pending, `promise` must remain pending until `x` is fulfilled or rejected.
@@ -93,7 +93,7 @@ To run `Resolve(promise, x)`, perform the following steps:
    1. Let `then` be `x.then`. [[4.5](#notes)]
    1. If retrieving the property `x.then` results in a thrown exception `e`, reject `promise` with `e` as the reason.
    1. If `then` is a function, call it with `x` as `this`, first argument `resolvePromise`, and second argument `rejectPromise`, where:
-      1. If/when `resolvePromise` is called with a value `y`, run `Resolve(promise, y)`.
+      1. If/when `resolvePromise` is called with a value `y`, run `[[Resolve]](promise, y)`.
       1. If/when `rejectPromise` is called with a reason `r`, reject `promise` with `r`.
       1. If both `resolvePromise` and `rejectPromise` are called, or multiple calls to the same argument are made, the first call takes precedence, and any further calls are ignored.
       1. If calling `then` throws an exception `e`,
