@@ -87,7 +87,7 @@ To run `[[Resolve]](promise, x)`, perform the following steps:
 
 1. If `x` is a promise, adopt its state [[4.4](#notes)]:
    1. If `x` is pending, `promise` must remain pending until `x` is fulfilled or rejected.
-   1. If/when `x` is fulfilled, fulfill `promise` the same value.
+   1. If/when `x` is fulfilled, fulfill `promise` with the same value.
    1. If/when `x` is rejected, reject `promise` with the same reason.
 1. Otherwise, if `x` is an object or function,
    1. Let `then` be `x.then`. [[4.5](#notes)]
