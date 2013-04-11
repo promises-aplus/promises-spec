@@ -56,6 +56,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>Naïve implementation of Promises/A+ specification</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/ondras/promise">ondras/promise</a></td>
+            <td>Straightforward client-side Promises/A+ implementation, with XHR, setTimeout etc.</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a></td>
             <td>From the Orion library</td>
         </tr>
