@@ -40,6 +40,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>Promises/A+ closure-based implementation</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/gameclosure/ff">ff</a></td>
+            <td>Simplifies the most common use cases for series, parallel, and promise utilities</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kaerus/promise.js">kaerus/promise.js</a></td>
             <td>A Promises/A+ library, originally developed for the ArangoDB client</td>
         </tr>
