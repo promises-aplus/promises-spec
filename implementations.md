@@ -36,6 +36,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>A ~60-line Promises/A+ compliant implementation in CoffeeScript</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/malko/D.js">D.js</a></td>
+            <td>A tiny Promises/A+ implementation for Node.js and the browser with some extras</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/shanewholloway/node-fate">fate</a></td>
             <td>Promises/A+ closure-based implementation</td>
         </tr>
