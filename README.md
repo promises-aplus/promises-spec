@@ -104,6 +104,8 @@ To run `[[Resolve]](promise, x)`, perform the following steps:
    1. If `then` is not a function, fulfill `promise` with `x`.
 1. If `x` is not an object or function, fulfill `promise` with `x`.
 
+Due to the recursive nature of this procedure, it is possible for a conformant implementation to cause infinite recursion if a promise is resolved with a thenable that participates in a circular thenable chain. Implementations are allowed, but not required, to detect such occurrences and instead reject `promise` with an informative `TypeError` as the reason.
+
 ## Notes
 
 1. In practical terms, an implementation must use a mechanism such as `setTimeout`, `setImmediate`, or `process.nextTick` to ensure that `onFulfilled` and `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
