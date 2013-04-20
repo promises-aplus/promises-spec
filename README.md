@@ -61,7 +61,7 @@ promise.then(onFulfilled, onRejected)
     1. it must be called after `promise` is rejected, with `promise`'s rejection reason as its first argument.
     1. it must not be called more than once.
     1. it must not be called if `onFulfilled` has been called.
-1. `then` must return before `onFulfilled` or `onRejected` is called [[4.1](#notes)].
+1. `onFulfilled` or `onRejected` must not be called before the end of the event loop turn in which `then` is called [[4.1](#notes)].
 1. `onFulfilled` and `onRejected` must be called as functions (i.e. with no `this` value). [[4.2](#notes)]
 1. `then` may be called multiple times on the same promise.
     1. If/when `promise` is fulfilled, all respective `onFulfilled` callbacks must execute in the order of their originating calls to `then`.
@@ -104,7 +104,7 @@ To run `[[Resolve]](promise, x)`, perform the following steps:
 
 ## Notes
 
-1. In practical terms, an implementation must use a mechanism such as `setTimeout`, `setImmediate`, or `process.nextTick` to ensure that `onFulfilled` and `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
+1. In practical terms, an implementation must use a mechanism such as `setTimeout`, `setImmediate`, or `process.nextTick` to ensure that `onFulfilled` and `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed. Importantly, both "micro-turn" scheduling (e.g. using `Object.observe` or `process.nextTick`) and "macro-turn" scheduling (e.g. using `setImmediate`) fulfill the requirement.
 
 1. That is, in strict mode `this` will be `undefined` inside of them; in sloppy mode, it will be the global object.
 
