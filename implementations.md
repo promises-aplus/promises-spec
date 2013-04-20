@@ -123,6 +123,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/malko/D.js">D.js</a></td>
+            <td>tiny Promises/A+ implementation for node and browser with some extents</td>
+        </tr>
     </tbody>
 </table>
 
