@@ -33,7 +33,7 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         </tr>
         <tr>
             <td><a href="https://github.com/wizardwerdna/covenant">Covenant</a></td>
-            <td>A ~60-line Promises/A+ compliant implementation in CoffeeScript</td>
+            <td>A tight and performant Promises/A+ compliant implementation in CoffeeScript</td>
         </tr>
         <tr>
             <td><a href="https://github.com/malko/D.js">D.js</a></td>
