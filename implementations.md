@@ -102,7 +102,11 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         <tr>
             <td><a href="https://github.com/tildeio/rsvp.js">rsvp.js</a></td>
             <td>A lightweight library that provides tools for organizing asynchronous code</td>
-        </tr>
+        </tr>  
+        <tr>
+            <td><a href="https://github.com/arieh/Shvua">Shvua</a></td>
+            <td>A Promise implementation that also allows you to wrap your object's API with promise-like API</td>
+        </tr> 
         <tr>
             <td><a href="https://github.com/nobuoka/Ten.Promise">Ten.Promise</a></td>
             <td>Promises/A+ implementation written in TypeScript</td>
@@ -122,11 +126,7 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
-        </tr> 
-        <tr>
-            <td><a href="https://github.com/arieh/Shvua">Shvua</a></td>
-            <td>A Promise implementation that also allows you to wrap your object's API with promise-like API</td>
-        </tr>   
+        </tr>  
     </tbody>
 </table>
 
