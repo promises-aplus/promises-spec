@@ -122,7 +122,11 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
-        </tr>
+        </tr> 
+        <tr>
+            <td><a href="https://github.com/arieh/Shvua">Shvua</a></td>
+            <td>A Promise implementation that also allows you to wrap your object's API with promise-like API</td>
+        </tr>   
     </tbody>
 </table>
 
