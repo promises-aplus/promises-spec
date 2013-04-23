@@ -31,18 +31,18 @@ A promise must be in one of three states: pending, fulfilled, or rejected.
 1. When fulfilled, a promise:
 
     1. must not transition to any other state.
-    1. must have a fulfillment value, which must not change.
+    1. must have a value, which must not change.
 
 1. When rejected, a promise:
 
     1. must not transition to any other state.
-    1. must have a rejection reason, which must not change.
+    1. must have a reason, which must not change.
 
 Here, "must not change" means immutable identity (i.e. `===`), but does not imply deep immutability.
 
 ### The `then` Method
 
-A promise must provide a `then` method to access its current or eventual fulfillment value or rejection reason.
+A promise must provide a `then` method to access its current or eventual value or reason.
 
 A promise's `then` method accepts two arguments:
 
@@ -54,11 +54,11 @@ promise.then(onFulfilled, onRejected)
     1. If `onFulfilled` is not a function, it must be ignored.
     1. If `onRejected` is not a function, it must be ignored.
 1. If `onFulfilled` is a function:
-    1. it must be called after `promise` is fulfilled, with `promise`'s fulfillment value as its first argument.
+    1. it must be called after `promise` is fulfilled, with `promise`'s value as its first argument.
     1. it must not be called more than once.
     1. it must not be called if `onRejected` has been called.
 1. If `onRejected` is a function,
-    1. it must be called after `promise` is rejected, with `promise`'s rejection reason as its first argument.
+    1. it must be called after `promise` is rejected, with `promise`'s reason as its first argument.
     1. it must not be called more than once.
     1. it must not be called if `onFulfilled` has been called.
 1. `then` must return before `onFulfilled` or `onRejected` is called [[4.1](#notes)].
