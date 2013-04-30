@@ -85,6 +85,7 @@ This treatment of thenables allows promise implementations to interoperate, as l
 
 To run `[[Resolve]](promise, x)`, perform the following steps:
 
+1. If `promise` and `x` refer to the same object, reject `promise` with a `TypeError` as the reason.
 1. If `x` is a promise, adopt its state [[4.4](#notes)]:
    1. If `x` is pending, `promise` must remain pending until `x` is fulfilled or rejected.
    1. If/when `x` is fulfilled, fulfill `promise` with the same value.
@@ -93,7 +94,9 @@ To run `[[Resolve]](promise, x)`, perform the following steps:
    1. Let `then` be `x.then`. [[4.5](#notes)]
    1. If retrieving the property `x.then` results in a thrown exception `e`, reject `promise` with `e` as the reason.
    1. If `then` is a function, call it with `x` as `this`, first argument `resolvePromise`, and second argument `rejectPromise`, where:
-      1. If/when `resolvePromise` is called with a value `y`, run `[[Resolve]](promise, y)`.
+      1. If/when `resolvePromise` is called with a value `y`,
+         1. If `x` and `y` refer to the same object, fulfill `promise` with `x`.
+         1. Otherwise, run `[[Resolve]](promise, y)`.
       1. If/when `rejectPromise` is called with a reason `r`, reject `promise` with `r`.
       1. If both `resolvePromise` and `rejectPromise` are called, or multiple calls to the same argument are made, the first call takes precedence, and any further calls are ignored.
       1. If calling `then` throws an exception `e`,
@@ -101,6 +104,8 @@ To run `[[Resolve]](promise, x)`, perform the following steps:
          1. Otherwise, reject `promise` with `e` as the reason.
    1. If `then` is not a function, fulfill `promise` with `x`.
 1. If `x` is not an object or function, fulfill `promise` with `x`.
+
+Due to the recursive nature of this procedure, it is possible for a conformant implementation to cause infinite recursion if a promise is resolved with a thenable that participates in a circular thenable chain. Implementations are allowed, but not required, to detect such occurrences and instead reject `promise` with an informative `TypeError` as the reason.
 
 ## Notes
 
