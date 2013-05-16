@@ -1,8 +1,8 @@
 # Conformant Implementations
 
-There are many conformant implementations of Promises/A+. Here are the ones we know about. Note that an implementation's conformance is determined by it passing the <a href="https://github.com/promises-aplus/promises-tests">test suite</a>.
+There are many conformant implementations of Promises/A+. Here are the ones we know about. Note that an implementation's conformance is determined by it passing the [test suite](https://github.com/promises-aplus/promises-tests).
 
-Conformant implementations are encouraged to include <a href="https://rawgithub.com/promises-aplus/promises-spec/master/logo.svg">the Promises/A+ logo</a> in their README files with a link to the specification, using code like the following:
+Conformant implementations are encouraged to include [the Promises/A+ logo](https://rawgithub.com/promises-aplus/promises-spec/master/logo.svg) in their README files with a link to the specification, using code like the following:
 
 ```html
 <a href="http://promises-aplus.github.com/promises-spec">
@@ -10,6 +10,8 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
          alt="Promises/A+ logo" title="Promises/A+ 1.0 compliant" align="right" />
 </a>
 ```
+
+Also, if your implementation is published in the npm registry, we suggest using [the "promises-aplus" keyword](https://npmjs.org/browse/keyword/promises-aplus).
 
 <table>
     <thead>
