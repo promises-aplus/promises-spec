@@ -34,6 +34,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Promises/A+ compliant implementation in ActionScript 3.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/sebastian-software/core/blob/master/source/class/core/event/Promise.js">Core</a></td>
+            <td>A fine foundation for JavaScript projects</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/wizardwerdna/covenant">Covenant</a></td>
             <td>A tight and performant Promises/A+ compliant implementation in CoffeeScript</td>
         </tr>
@@ -144,7 +148,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
-        </tr>  
+        </tr>
     </tbody>
 </table>
 
