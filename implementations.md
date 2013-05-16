@@ -138,7 +138,11 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
-        </tr>  
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sebastian-software/core">Core</a></td>
+            <td>A Fine Foundation for JavaScript Projects</td>
+        </tr>
     </tbody>
 </table>
 
