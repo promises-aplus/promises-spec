@@ -56,6 +56,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
             <td>Dabbling with promises. It’ll be legendary</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/pfraze/promises">Local.js Promises</a></td>
+            <td>Monadic function chaining around asynchronously-fulfilled values. [Part of the Local project]</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/aheckmann/mpromise">mpromise</a></td>
             <td>A Promises/A+ conformant implementation, written for mongoose</td>
         </tr>
@@ -73,7 +77,7 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         </tr>
         <tr>
             <td><a href="https://github.com/rkatic/p">P</a></td>
-            <td>A simple Promises/A+ library, implementing a subset of the the Q API.</td>
+            <td>A simple Promises/A+ library, implementing a subset of the the Q API</td>
         </tr>
         <tr>
             <td><a href="https://github.com/lazd/Pinky">Pinky</a></td>
@@ -94,6 +98,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         <tr>
             <td><a href="https://github.com/RubenVerborgh/promiscuous/">promiscuous</a></td>
             <td>A minimal and fast promise/deferred implementation</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/reflex/promix">Promix</a></td>
+            <td>Mix promises with callbacks for improved control flow</a></td>
         </tr>
         <tr>
             <td><a href="https://github.com/kriskowal/q">Q</a></td>
@@ -122,6 +130,10 @@ Conformant implementations are encouraged to include <a href="https://rawgithub.
         <tr>
             <td><a href="https://github.com/cujojs/when">when</a></td>
             <td>Cujo.js's promise implementation and async toolkit</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/xogeny/aplus">xogeny/aplus</a></td>
+            <td>An implementation of the Promises/A+ specification and test suite in Python</td>
         </tr>
         <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
