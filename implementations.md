@@ -50,6 +50,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Simplifies the most common use cases for series, parallel, and promise utilities</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/fidian/FidPromise">FidPromise</a></td>
+            <td>Promise implementation that is readable and debuggable</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kaerus/promise.js">kaerus/promise.js</a></td>
             <td>A Promises/A+ library, originally developed for the ArangoDB client</td>
         </tr>
