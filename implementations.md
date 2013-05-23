@@ -144,7 +144,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
-        </tr>  
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sebastian-software/core/blob/master/source/class/core/event/Promise.js">Core</a></td>
+            <td>A Fine Foundation for JavaScript Projects</td>
+        </tr>
     </tbody>
 </table>
 
