@@ -78,6 +78,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Naïve implementation of Promises/A+ specification</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/behance/nbd.js/blob/master/trait/promise.js">nbd.js</a></td>
+            <td>Promises as an inheritable trait from nbd.js</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/ondras/promise">ondras/promise</a></td>
             <td>Straightforward client-side Promises/A+ implementation, with XHR, setTimeout etc.</td>
         </tr>
