@@ -20,6 +20,8 @@ The following people assembled and contributed to the concepts and content in Pr
 * Domenic Denicola ([@domenic](https://github.com/domenic))
 * Yehuda Katz ([@wycats](https://github.com/wycats))
 * Kris Kowal ([@kriskowal](https://github.com/kriskowal))
+* Forbes Lindesay ([@ForbesLindesay](https://github.com/ForbesLindesay))
+* Mark Miller ([@erights](https://github.com/erights))
 * Luke Smith ([@lsmith](https://github.com/lsmith))
 
 ## Logo
