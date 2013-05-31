@@ -153,6 +153,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
         </tr>
+        <tr>
+            <td><a href="http://yuilibrary.com/">YUI</a></td>
+            <td>YUI is a free, open source JavaScript library for building richly interactive web applications</td>
+        </tr>
     </tbody>
 </table>
 
