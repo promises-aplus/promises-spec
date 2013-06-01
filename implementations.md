@@ -94,6 +94,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>A simple Promises/A+ library, implementing a subset of the the Q API</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/mudge/pacta">Pacta</a></td>
+            <td>An algebraic, Promises/A+ compliant implementation of Promises in node.js.</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/lazd/Pinky">Pinky</a></td>
             <td>An extremely tiny Promises/A+ implementation that passes the Promises/A+ test suite</td>
         </tr>
