@@ -158,7 +158,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Yet another Promises/A+ implementation</td>
         </tr>
         <tr>
-            <td><a href="http://yuilibrary.com/yui/docs/api/classes/Promise.html">YUI</a></td>
+            <td><a href="http://yuilibrary.com/yui/docs/promise/">YUI</a></td>
             <td>YUI is a free, open source JavaScript library for building richly interactive web applications</td>
         </tr>
     </tbody>
