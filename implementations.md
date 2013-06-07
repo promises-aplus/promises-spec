@@ -147,7 +147,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/cujojs/when">when</a></td>
-            <td>Cujo.js's promise implementation and async toolkit</td>
+            <td>cujoJS's promise implementation and async toolkit</td>
         </tr>
         <tr>
             <td><a href="https://github.com/xogeny/aplus">xogeny/aplus</a></td>
