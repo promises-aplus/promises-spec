@@ -13,8 +13,7 @@ A promise represents a value that may not be available yet. The primary method f
 ## Terminology
 
 1. "promise" is an object or function with a `then` method whose behavior conforms to this specification.
-1. "thenable" is an object or function that defines a `then` method.
-1. "value" is any legal JavaScript value (including `undefined`, a thenable, or a promise).
+1. "value" is any legal JavaScript value (including `undefined` or a promise).
 1. "exception" is a value that is thrown using the `throw` statement.
 1. "reason" is a value that indicates why a promise was rejected.
 
@@ -72,40 +71,22 @@ promise.then(onFulfilled, onRejected)
     promise2 = promise1.then(onFulfilled, onRejected);
     ```
 
-    1. If either `onFulfilled` or `onRejected` returns a value `x`, run the Promise Resolution Procedure `[[Resolve]](promise2, x)`.
-    1. If either `onFulfilled` or `onRejected` throws an exception `e`, `promise2` must be rejected with `e` as the reason.
-    1. If `onFulfilled` is not a function and `promise1` is fulfilled, `promise2` must be fulfilled with the same value.
-    1. If `onRejected` is not a function and `promise1` is rejected, `promise2` must be rejected with the same reason.
+    1. If either callback (`onFulfilled` or `onRejected`) throws an exception, `promise2` must be rejected with the thrown exception as the reason.
+    1. If either callback returns a value that is not an object or function with a `then` method[[4.5](#notes)], `promise2` must be fulfilled with that value.
+    1. If either callback returns `promise2`, `promise2` must be rejected with a `TypeError` as the reason.
+    1. If either callback returns a promise other than `promise2` (call it `returnedPromise`), `promise2` must assume the state of `returnedPromise`.
+        1. If `returnedPromise` is pending, `promise2` must remain pending until `returnedPromise` is fulfilled or rejected.
+        1. If/when `returnedPromise` is fulfilled, `promise2` must be fulfilled with the same value.
+        1. If/when `returnedPromise` is rejected, `promise2` must be rejected with the same reason.
+    1. If either callback returns a value which is an object or function with a `then` method, but the value cannot be identified as a promise (call the value `thenable`) attempt to fulfill or reject `promise2` via `thenable`'s `then` method[[4.6](#notes)].
 
-### The Promise Resolution Procedure
+        ```js
+        thenable.then(resolver, rejecter);
+        ```
 
-The **promise resolution procedure** is an abstract operation taking as input a promise and a value, which we denote as `[[Resolve]](promise, x)`. If `x` is a thenable, it attempts to make `promise` adopt the state of `x`, under the assumption that `x` behaves at least somewhat like a promise. Otherwise, it fulfills `promise` with the value `x`.
-
-This treatment of thenables allows promise implementations to interoperate, as long as they expose a Promises/A+-compliant `then` method. It also allows Promises/A+ implementations to "assimilate" nonconformant implementations with reasonable `then` methods.
-
-To run `[[Resolve]](promise, x)`, perform the following steps:
-
-1. If `promise` and `x` refer to the same object, reject `promise` with a `TypeError` as the reason.
-1. If `x` is a promise, adopt its state [[4.4](#notes)]:
-   1. If `x` is pending, `promise` must remain pending until `x` is fulfilled or rejected.
-   1. If/when `x` is fulfilled, fulfill `promise` with the same value.
-   1. If/when `x` is rejected, reject `promise` with the same reason.
-1. Otherwise, if `x` is an object or function,
-   1. Let `then` be `x.then`. [[4.5](#notes)]
-   1. If retrieving the property `x.then` results in a thrown exception `e`, reject `promise` with `e` as the reason.
-   1. If `then` is a function, call it with `x` as `this`, first argument `resolvePromise`, and second argument `rejectPromise`, where:
-      1. If/when `resolvePromise` is called with a value `y`,
-         1. If `x` and `y` refer to the same object, fulfill `promise` with `x`.
-         1. Otherwise, run `[[Resolve]](promise, y)`.
-      1. If/when `rejectPromise` is called with a reason `r`, reject `promise` with `r`.
-      1. If both `resolvePromise` and `rejectPromise` are called, or multiple calls to the same argument are made, the first call takes precedence, and any further calls are ignored.
-      1. If calling `then` throws an exception `e`,
-         1. If `resolvePromise` or `rejectPromise` have been called, ignore it.
-         1. Otherwise, reject `promise` with `e` as the reason.
-   1. If `then` is not a function, fulfill `promise` with `x`.
-1. If `x` is not an object or function, fulfill `promise` with `x`.
-
-Due to the recursive nature of this procedure, it is possible for a conformant implementation to cause infinite recursion if a promise is resolved with a thenable that participates in a circular thenable chain. Implementations are allowed, but not required, to detect such occurrences and instead reject `promise` with an informative `TypeError` as the reason.
+        1. If an exception is thrown when calling `thenable.then`, `promise2` must be rejected with that exception as the reason.
+        1. If `rejecter` is called, `promise2` must be rejected with the the first argument as the reason.
+        1. If `resolver` is called, treat the first argument as the return value from `onFulfilled` [[4.7](#notes)].
 
 ## Notes
 
@@ -115,9 +96,11 @@ Due to the recursive nature of this procedure, it is possible for a conformant i
 
 1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions.
 
-1. Generally, it will only be known that `x` is a true promise if it comes from the current implementation. This clause allows the use of implementation-specific means to adopt the state of known-conformant promises.
+1. This specification does not describe the method to identify a value as a conformant promise. Generally, it will only be known with certainty that a value is a promise if it comes from the current implementation. This clause allows the use of implementation-specific means to adopt the state of known-conformant promises.
 
-1. This procedure of first storing a reference to `x.then`, then testing that reference, and then calling that reference, avoids multiple accesses to the `x.then` property. Such precautions are important for ensuring consistency in the face of an accessor property, whose value could change between retrievals.
+1. When dealing with promise-like objects, it is advisable to store the object's `then` method and execute it with `call` or `apply` to avoid property accessors that may return different values in response to multiple gets.
+
+1. Treating the `resolver` argument as the return value to `onFulfilled` can result in infinite recursion. Implementers may choose to protect against this by rejecting `promise2` with a `TypeError`.
 
 ---
 
