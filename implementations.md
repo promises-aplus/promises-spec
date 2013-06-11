@@ -13,7 +13,7 @@ Conformant implementations are encouraged to include [the Promises/A+ logo](http
 
 Also, if your implementation is published in the npm registry, we suggest using [the "promises-aplus" keyword](https://npmjs.org/browse/keyword/promises-aplus).
 
-## Implementation List
+## Standalone
 
 <table>
     <thead>
@@ -30,10 +30,6 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/CodeCatalyst/promise.coffee">CodeCatalyst/promise.coffee</a></td>
             <td>Promises/A+ compliant implementation in object-oriented CoffeeScript</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/sebastian-software/core/blob/master/source/class/core/event/Promise.js">Core</a></td>
-            <td>A fine foundation for JavaScript projects</td>
         </tr>
         <tr>
             <td><a href="https://github.com/wizardwerdna/covenant">Covenant</a></td>
@@ -76,16 +72,8 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Naïve implementation of Promises/A+ specification</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/behance/nbd.js/blob/master/trait/promise.js">nbd.js</a></td>
-            <td>Promises as an inheritable trait from nbd.js</td>
-        </tr>
-        <tr>
             <td><a href="https://github.com/ondras/promise">ondras/promise</a></td>
             <td>Straightforward client-side Promises/A+ implementation, with XHR, setTimeout etc.</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a></td>
-            <td>From the Orion library</td>
         </tr>
         <tr>
             <td><a href="https://github.com/rkatic/p">P</a></td>
@@ -106,10 +94,6 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/satchmorun/promeso">promeso</a></td>
             <td>A little Promises/A+ implementation</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/flams/emily/wiki/Promise">promesse</a></td>
-            <td>Emily's Promise/A+</td>
         </tr>
         <tr>
             <td><a href="https://github.com/RubenVerborgh/promiscuous/">promiscuous</a></td>
@@ -150,6 +134,35 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
+        </tr>
+    </tbody>
+</table>
+
+## Inside Frameworks
+
+<table>
+    <thead>
+        <tr>
+            <th>Implementation</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://github.com/sebastian-software/core/blob/master/source/class/core/event/Promise.js">Core</a></td>
+            <td>A fine foundation for JavaScript projects</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/behance/nbd.js/blob/master/trait/promise.js">nbd.js</a></td>
+            <td>Promises as an inheritable trait from nbd.js</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a></td>
+            <td>From the Orion library</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/flams/emily/wiki/Promise">promesse</a></td>
+            <td>Emily's Promise/A+</td>
         </tr>
         <tr>
             <td><a href="http://yuilibrary.com/yui/docs/promise/">YUI</a></td>
