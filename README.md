@@ -53,12 +53,12 @@ promise.then(onFulfilled, onRejected)
     1. If `onRejected` is not a function, it must be ignored.
 1. If `onFulfilled` is a function:
     1. it must be called after `promise` is fulfilled, with `promise`'s value as its first argument.
+    1. it must not be called before `promise` is fulfilled.
     1. it must not be called more than once.
-    1. it must not be called if `onRejected` has been called.
 1. If `onRejected` is a function,
     1. it must be called after `promise` is rejected, with `promise`'s reason as its first argument.
+    1. it must not be called before `promise` is rejected.
     1. it must not be called more than once.
-    1. it must not be called if `onFulfilled` has been called.
 1. `then` must return before `onFulfilled` or `onRejected` is called [[4.1](#notes)].
 1. `onFulfilled` and `onRejected` must be called as functions (i.e. with no `this` value). [[4.2](#notes)]
 1. `then` may be called multiple times on the same promise.
