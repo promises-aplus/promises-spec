@@ -1,17 +1,19 @@
 # Conformant Implementations
 
-There are many conformant implementations of Promises/A+. Here are the ones we know about. Note that an implementation's conformance is determined by it passing the [test suite](https://github.com/promises-aplus/promises-tests).
+There are many conformant implementations of Promises/A+. Here are the ones we know about. Note that an implementation's conformance is determined by it passing the [test suite](https://github.com/promises-aplus/promises-tests). If you pass the tests, feel free to send a pull request to get yourself on this list!
 
 Conformant implementations are encouraged to include [the Promises/A+ logo](https://rawgithub.com/promises-aplus/promises-spec/master/logo.svg) in their README files with a link to the specification, using code like the following:
 
 ```html
-<a href="http://promises-aplus.github.com/promises-spec">
-    <img src="http://promises-aplus.github.com/promises-spec/assets/logo-small.png"
-         alt="Promises/A+ logo" title="Promises/A+ 1.0 compliant" align="right" />
+<a href="http://promisesaplus.com/">
+    <img src="http://promisesaplus.com/assets/logo-small.png" alt="Promises/A+ logo"
+         title="Promises/A+ 1.0 compliant" align="right" />
 </a>
 ```
 
 Also, if your implementation is published in the npm registry, we suggest using [the "promises-aplus" keyword](https://npmjs.org/browse/keyword/promises-aplus).
+
+## Standalone
 
 <table>
     <thead>
@@ -28,14 +30,6 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/CodeCatalyst/promise.coffee">CodeCatalyst/promise.coffee</a></td>
             <td>Promises/A+ compliant implementation in object-oriented CoffeeScript</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/CodeCatalyst/promise-as3">CodeCatalyst/promise-as3</a></td>
-            <td>Promises/A+ compliant implementation in ActionScript 3.0</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/sebastian-software/core/blob/master/source/class/core/event/Promise.js">Core</a></td>
-            <td>A fine foundation for JavaScript projects</td>
         </tr>
         <tr>
             <td><a href="https://github.com/wizardwerdna/covenant">Covenant</a></td>
@@ -78,16 +72,8 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Naïve implementation of Promises/A+ specification</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/behance/nbd.js/blob/master/trait/promise.js">nbd.js</a></td>
-            <td>Promises as an inheritable trait from nbd.js</td>
-        </tr>
-        <tr>
             <td><a href="https://github.com/ondras/promise">ondras/promise</a></td>
             <td>Straightforward client-side Promises/A+ implementation, with XHR, setTimeout etc.</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a></td>
-            <td>From the Orion library</td>
         </tr>
         <tr>
             <td><a href="https://github.com/rkatic/p">P</a></td>
@@ -108,10 +94,6 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/satchmorun/promeso">promeso</a></td>
             <td>A little Promises/A+ implementation</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/flams/emily/wiki/Promise">promesse</a></td>
-            <td>Emily's Promise/A+</td>
         </tr>
         <tr>
             <td><a href="https://github.com/RubenVerborgh/promiscuous/">promiscuous</a></td>
@@ -150,12 +132,37 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>cujoJS's promise implementation and async toolkit</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/xogeny/aplus">xogeny/aplus</a></td>
-            <td>An implementation of the Promises/A+ specification and test suite in Python</td>
-        </tr>
-        <tr>
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
+        </tr>
+    </tbody>
+</table>
+
+## Inside Frameworks
+
+<table>
+    <thead>
+        <tr>
+            <th>Implementation</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://github.com/sebastian-software/core/blob/master/source/class/core/event/Promise.js">Core</a></td>
+            <td>A fine foundation for JavaScript projects</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/behance/nbd.js/blob/master/trait/promise.js">nbd.js</a></td>
+            <td>Promises as an inheritable trait from nbd.js</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a></td>
+            <td>From the Orion library</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/flams/emily/wiki/Promise">promesse</a></td>
+            <td>Emily's Promise/A+</td>
         </tr>
         <tr>
             <td><a href="http://yuilibrary.com/yui/docs/promise/">YUI</a></td>
@@ -164,4 +171,33 @@ Also, if your implementation is published in the npm registry, we suggest using 
     </tbody>
 </table>
 
-Feel free to send a pull request to get yourself on this list!
+## In Other Languages
+
+We've been excited to discover that the popularity of Promises/A+ has led to a number of implementations in other languages besides JavaScript. Although these don't necessarily match the exact semantics of the spec due to differing language capabilities, and we can't verify them against our JavaScript test suite directly, it's still very exciting to have such a strong community and we want to showcase these efforts.
+
+<table>
+    <thead>
+        <tr>
+            <th>Language</th>
+            <th>Implementation</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ActionScript</td>
+            <td><a href="https://github.com/CodeCatalyst/promise-as3">CodeCatalyst/promise-as3</a></td>
+            <td>Promises/A+ compliant implementation in ActionScript 3.0</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td><a href="https://github.com/xogeny/aplus">xogeny/aplus</a></td>
+            <td>An implementation of the Promises/A+ specification and test suite in Python</td>
+        </tr>
+        <tr>
+            <td>Objective-C</td>
+            <td><a href="https://github.com/couchdeveloper/RXPromise">RXPromise</a></td>
+            <td>An Objective-C Class which implements the Promises/A+ specification.</td>
+        </tr>
+    </tbody>
+</table>
