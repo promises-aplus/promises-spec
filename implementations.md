@@ -199,5 +199,10 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td><a href="https://github.com/couchdeveloper/RXPromise">RXPromise</a></td>
             <td>An Objective-C Class which implements the Promises/A+ specification.</td>
         </tr>
+        <tr>
+            <td>Ceylon</td>
+            <td><a href="https://github.com/vietj/ceylon-promises">Ceylon Promises</a></td>
+            <td>A Ceylon implementation of the Promises/A+ specification.</td>
+        </tr>
     </tbody>
 </table>
