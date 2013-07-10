@@ -76,6 +76,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Straightforward client-side Promises/A+ implementation, with XHR, setTimeout etc.</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/potch/promise">potch/promise.js</a></td>
+            <td>Minimal, fully Promises/A+ compliant promises implementation</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/rkatic/p">P</a></td>
             <td>A simple Promises/A+ library, implementing a subset of the the Q API</td>
         </tr>
