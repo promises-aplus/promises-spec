@@ -61,7 +61,7 @@ promise.then(onFulfilled, onRejected)
     1. it must be called after `promise` is rejected, with `promise`'s reason as its first argument.
     1. it must not be called before `promise` is rejected.
     1. it must not be called more than once.
-1. `then` must return before `onFulfilled` or `onRejected` is called [[4.1](#notes)].
+1. `onFulfilled` or `onRejected` must not be called until the execution context stack contains only platform code [[4.1](#notes)].
 1. `onFulfilled` and `onRejected` must be called as functions (i.e. with no `this` value). [[4.2](#notes)]
 1. `then` may be called multiple times on the same promise.
     1. If/when `promise` is fulfilled, all respective `onFulfilled` callbacks must execute in the order of their originating calls to `then`.
@@ -107,7 +107,7 @@ If a promise is resolved with a thenable that participates in a circular thenabl
 
 ## Notes
 
-1. In practical terms, an implementation must use a mechanism such as `setTimeout`, `setImmediate`, or `process.nextTick` to ensure that `onFulfilled` and `onRejected` are not invoked in the same turn of the event loop as the call to `then` to which they are passed.
+1. Here "platform code" means engine, environment, and promise implementation code. In practice, this requirement ensures that `onFulfilled` and `onRejected` execute asynchronously, after the event loop turn in which `then` is called. In practice, this will be implemented with either a "macro-turn" mechanism such as `setTimeout` or `setImmediate`, or with a "micro-turn" mechanism such as `Object.observe` or `process.nextTick`. However, since the promise implementation is considered platform code, it may itself contain a task-scheduling queue or "trampoline" in which the handlers are called.
 
 1. That is, in strict mode `this` will be `undefined` inside of them; in sloppy mode, it will be the global object.
 
