@@ -103,7 +103,7 @@ To run `[[Resolve]](promise, x)`, perform the following steps:
    1. If `then` is not a function, fulfill `promise` with `x`.
 1. If `x` is not an object or function, fulfill `promise` with `x`.
 
-If a promise is resolved with a thenable that participates in a circular thenable chain, such that the recursive nature of `[[Resolve]](promise, thenable)` eventually causes `[[Resolve]](promise, thenable)` to be called again, following the above algorithm will lead to infinite recursion. Implementations are encouraged, but not required, to detect such recursion and reject `promise` with an informative `TypeError` as the reason.[[4.6](#notes)]
+If a promise is resolved with a thenable that participates in a circular thenable chain, such that the recursive nature of `[[Resolve]](promise, thenable)` eventually causes `[[Resolve]](promise, thenable)` to be called again, following the above algorithm will lead to infinite recursion. Implementations are encouraged, but not required, to detect such recursion and reject `promise` with an informative `TypeError` as the reason. [[4.6](#notes)]
 
 ## Notes
 
