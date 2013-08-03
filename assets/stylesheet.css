@@ -376,3 +376,37 @@ h2 ~ ol li::before, h3 ~ h2 ~ ol li::before {
 h3 ~ ol li::before {
   content: counter(h2)"."counter(h3)"."counters(li, ".")".\A0";
 }
+
+/*****************************************
+* Linker!
+*****************************************/
+
+body {
+  position: relative;
+}
+
+a.anchor {
+  opacity: 0;
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  float: left;
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  text-align: right;
+}
+
+a.anchor::before {
+  content: "#";
+}
+
+*:hover > a.anchor {
+  opacity: 0.3;
+}
+
+*:hover > a.anchor:hover {
+  opacity: 1;
+}
+
