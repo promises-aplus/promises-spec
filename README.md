@@ -25,16 +25,11 @@ Finally, the core Promises/A+ specification does not deal with how to create, fu
 A promise must be in one of three states: pending, fulfilled, or rejected.
 
 1. When pending, a promise:
-
     1. may transition to either the fulfilled or rejected state.
-
 1. When fulfilled, a promise:
-
     1. must not transition to any other state.
     1. must have a value, which must not change.
-
 1. When rejected, a promise:
-
     1. must not transition to any other state.
     1. must have a reason, which must not change.
 
