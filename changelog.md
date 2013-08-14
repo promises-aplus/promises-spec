@@ -15,6 +15,7 @@ These changes help clarify and improve the specification, but should not affect 
 These changes impose new requirements on implementations, either to specify a previously-undefined behavior, or to fix something incorrect that the spec allowed in version 1.0.
 
 - Specified that `onFulfilled` and `onRejected` must be called as functions, with no `this` value.
+- Changed the way in which asynchronicity was mandated for `onFulfilled` and `onRejected`, to enforce the important invariant that the stack be clear. In particular, the new wording prevents fulfilling or rejecting a promise from ever synchronously calling the handlers.
 - Prohibited implementations from calling `onFulfilled` or `onRejected` before the corresponding promise was respectively fulfilled or rejected.
 - Specified the Promise Resolution Procedure, instead of leaving the mechanism for adopting a thenable's state unspecified.
   - The recursive nature of the now-specified procedure improves upon the naïve non-recursive suggestion given in version 1.0.
