@@ -46,8 +46,8 @@ promise.then(onFulfilled, onRejected)
 ```
 
 1. Both `onFulfilled` and `onRejected` are optional arguments:
-    1. If `onFulfilled` is not a function, it must be ignored.
-    1. If `onRejected` is not a function, it must be ignored.
+    1. If `onFulfilled` is not a function, it must be ignored.  If `onFulfilled` is a promise, a warning message should be produced.
+    1. If `onRejected` is not a function, it must be ignored.  If `onRejected` is a promise, a warning message should be produced.
 1. If `onFulfilled` is a function:
     1. it must be called after `promise` is fulfilled, with `promise`'s value as its first argument.
     1. it must not be called before `promise` is fulfilled.
