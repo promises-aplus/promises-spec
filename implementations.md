@@ -28,6 +28,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Example Promises/A+ implementation. Simple, tiny, fast, fully async</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/petkaantonov/bluebird">bluebird</a></td>
+            <td>Full featured Promises/A+ implementation with exceptionally good performance</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/CodeCatalyst/promise.coffee">CodeCatalyst/promise.coffee</a></td>
             <td>Promises/A+ compliant implementation in object-oriented CoffeeScript</td>
         </tr>
