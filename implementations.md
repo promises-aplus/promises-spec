@@ -114,7 +114,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/reflex/promix">Promix</a></td>
-            <td>Mix promises with callbacks for improved control flow</a></td>
+            <td>Mix promises with callbacks for improved control flow</td>
         </tr>
         <tr>
             <td><a href="https://github.com/kriskowal/q">Q</a></td>
