@@ -284,7 +284,8 @@ footer {
   text-align: center;
 }
 
-footer > p {
+footer > a {
+  display: inline-block;
   margin: 10px 0;
 }
 
@@ -409,4 +410,3 @@ a.anchor::before {
 *:hover > a.anchor:hover {
   opacity: 1;
 }
-
