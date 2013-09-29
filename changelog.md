@@ -1,6 +1,6 @@
 # Promises/A+ Changelog
 
-## [Version 1.1][] / 2013-??-??
+## [Version 1.1][] / 2013-09-29
 
 ### Informative Changes
 
