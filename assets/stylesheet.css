@@ -184,8 +184,9 @@ ul, ol, dl {
 }
 
 ul li {
-  list-style: inside;
-  padding-left: 20px;
+  list-style: outside;
+  margin-left: 20px;
+  margin-bottom: 0.5em;
 }
 
 ol li {
@@ -269,9 +270,8 @@ h1:before {
 
 body {
   background: #f2f2f2;
-  border-bottom: 1px solid #111;
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 800px;
   padding: 0 10px 50px 10px;
 }
 
@@ -286,7 +286,15 @@ footer {
 
 footer > a {
   display: inline-block;
-  margin: 10px 0;
+  position: relative;
+  margin: 10px 20px 10px 0;
+}
+
+footer > a:not(:last-of-type)::after {
+    content: " | ";
+    color: white;
+    position: absolute;
+    right: -15px;
 }
 
 
@@ -346,29 +354,31 @@ h2 {
   counter-increment: h2;
   counter-reset: h3;
 }
-h2::before {
+body.spec h2::before {
   content: counter(h2)". ";
 }
 
 h3 {
   counter-increment: h3;
 }
-h3::before {
+body.spec h3::before {
   content: counter(h2)"."counter(h3)". ";
 }
 
 ol {
   counter-reset: li;
+  margin-bottom: 0;
 }
 ol li {
   list-style-type: none;
   counter-increment: li;
   margin-left: 1.5em;
+  margin-bottom: 0.3em;
 }
 ol li::before {
   float: left;
-  margin-left: -4.5em;
-  width: 4.5em;
+  margin-left: -5.5em;
+  width: 5.5em;
   text-align: right;
 }
 h2 ~ ol li::before, h3 ~ h2 ~ ol li::before {
@@ -376,6 +386,18 @@ h2 ~ ol li::before, h3 ~ h2 ~ ol li::before {
 }
 h3 ~ ol li::before {
   content: counter(h2)"."counter(h3)"."counters(li, ".")".\A0";
+}
+
+/* Workaround Jekyll bug that inserts spurious lone <p>s */
+ol li p:first-of-type:last-of-type {
+    margin: 0;
+}
+ol li p {
+    margin-top: 0;
+}
+
+ul p:first-of-type:last-of-type {
+    display: inline;
 }
 
 /*****************************************
