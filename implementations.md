@@ -56,8 +56,8 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Promise implementation that is readable and debuggable</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/kaerus/promise.js">kaerus/promise.js</a></td>
-            <td>A Promises/A+ library, originally developed for the ArangoDB client</td>
+            <td><a href="https://github.com/kaerus-component/uP">microPromise</a></td>
+            <td>Written for a nodejs + browser ArangoDB driver.</td>
         </tr>
         <tr>
             <td><a href="https://github.com/novemberborn/legendary">legendary</a></td>
