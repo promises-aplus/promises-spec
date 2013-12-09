@@ -84,10 +84,6 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Fully Promises/A+ compliant promises and nothing else!</td>
         </tr>
         <tr>
-            <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
-            <td>A full, documented, standalone Promises/A+ 1.1 implementation for TypeScript / JavaScript / Node.js with some additional features to improve productivity</td>
-        </tr>
-        <tr>
             <td><a href="https://github.com/rkatic/p">P</a></td>
             <td>A simple Promises/A+ library, implementing a subset of the the Q API</td>
         </tr>
@@ -102,6 +98,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/timjansen/PinkySwear.js">PinkySwear.js</a></td>
             <td>Promises/A+ compliant in less than 400 bytes</td>
+        </tr>
+        <tr>
+            <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
+            <td>A full, documented, standalone Promises/A+ 1.1 implementation for TypeScript / JavaScript / Node.js with some additional features to improve productivity</td>
         </tr>
         <tr>
             <td><a href="https://github.com/satchmorun/promeso">promeso</a></td>
