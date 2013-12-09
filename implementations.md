@@ -100,6 +100,10 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Promises/A+ compliant in less than 400 bytes</td>
         </tr>
         <tr>
+            <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
+            <td>A full, documented, standalone Promises/A+ 1.1 implementation for TypeScript / JavaScript / Node.js with some additional features to improve productivity</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/satchmorun/promeso">promeso</a></td>
             <td>A little Promises/A+ implementation</td>
         </tr>
