@@ -70,13 +70,18 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/kaerus-component/uP">microPromise</a></td>
-            <td>Written for a nodejs + browser ArangoDB driver.</td>
+            <td><a href="https://github.com/novemberborn/legendary">legendary</a></td>
+            <td>Dabbling with promises. It’ll be legendary</td>
             <td>1.1</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/novemberborn/legendary">legendary</a></td>
-            <td>Dabbling with promises. It’ll be legendary</td>
+            <td><a href="https://github.com/calvinmetcalf/lie">Lie</a></td>
+            <td>Small library following the ES6 syntax</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/kaerus-component/uP">microPromise</a></td>
+            <td>Written for a nodejs + browser ArangoDB driver.</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -120,11 +125,6 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
-            <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
-            <td>A full, documented, standalone Promises/A+ 1.1 implementation for TypeScript / JavaScript / Node.js with some additional features to improve productivity</td>
-            <td>1.1</td>
-        </tr>
-        <tr>
             <td><a href="https://github.com/satchmorun/promeso">promeso</a></td>
             <td>A little Promises/A+ implementation</td>
             <td>1.0</td>
@@ -133,6 +133,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td><a href="https://github.com/RubenVerborgh/promiscuous/">promiscuous</a></td>
             <td>A minimal and fast promise/deferred implementation</td>
             <td>1.0</td>
+        </tr>
+        <tr>
+            <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
+            <td>A full, documented, standalone Promises/A+ 1.1 implementation for TypeScript / JavaScript / Node.js with some additional features to improve productivity</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/reflex/promix">Promix</a></td>
