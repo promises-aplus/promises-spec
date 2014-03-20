@@ -70,8 +70,8 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/novemberborn/legendary">legendary</a></td>
-            <td>Dabbling with promises. It’ll be legendary</td>
+            <td><a href="https://github.com/novemberborn/legendary">Legendary</a></td>
+            <td>Combines promise subclassing with sugar inspired by when.js, Q and async.</td>
             <td>1.1</td>
         </tr>
         <tr>
