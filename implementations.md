@@ -65,9 +65,9 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/fidian/FidPromise">FidPromise</a></td>
+            <td><a href="https://github.com/tests-always-included/fid-promise">FidPromise</a></td>
             <td>Promise implementation that is readable and debuggable</td>
-            <td>1.0</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/novemberborn/legendary">Legendary</a></td>
