@@ -5,6 +5,14 @@ title: Promises/A+ Changelog
 
 # Promises/A+ Changelog
 
+## [Version 1.1.1][] / 2014-05-05
+
+### Informative Changes
+
+These changes help clarify and improve the specification, but should not affect implementation conformance.
+
+- Clarified fulfillment value and rejection reason propagation when `onFulfilled` and `onRejected` passed to `then` are not functions.
+
 ## [Version 1.1][] / 2013-09-29
 
 ### Informative Changes
@@ -35,3 +43,4 @@ These changes impose new requirements on implementations, either to specify a pr
 
 [Version 1.0]: https://github.com/promises-aplus/promises-spec/tree/1.0.0
 [Version 1.1]: https://github.com/promises-aplus/promises-spec/tree/1.1.0
+[Version 1.1.1]: https://github.com/promises-aplus/promises-spec/tree/1.1.1
