@@ -95,6 +95,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/getify/native-promise-only">Native Promise Only</a></td>
+            <td>Polyfill for native ES6 Promises only, no extras!</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/ondras/promise">ondras/promise</a></td>
             <td>Straightforward client-side Promises/A+ implementation, with XHR, setTimeout etc.</td>
             <td>1.0</td>
