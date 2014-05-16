@@ -145,6 +145,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/bramstein/promis">Promis</a></td>
+            <td>A small embeddable Promise polyfill</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/reflex/promix">Promix</a></td>
             <td>Mix promises with callbacks for improved control flow</a></td>
             <td>1.0</td>
