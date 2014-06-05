@@ -126,8 +126,8 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/timjansen/PinkySwear.js">PinkySwear.js</a></td>
-            <td>Promises/A+ compliant in less than 400 bytes</td>
-            <td>1.0</td>
+            <td>Promises/A+ compliant in less than 500 bytes</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/satchmorun/promeso">promeso</a></td>
