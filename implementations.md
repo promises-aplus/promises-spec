@@ -117,7 +117,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/rkatic/p">P</a></td>
             <td>A simple Promises/A+ library, implementing a subset of the the Q API</td>
-            <td>1.0</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/mudge/pacta">Pacta</a></td>
