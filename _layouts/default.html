@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="assets/stylesheet.css" />
     <link rel="shortcut icon" href="assets/favicon.ico" />
 
-    <link rel="canonical" href="http://promisesaplus.com{{page.url | remove:'index.html' | remove:'.html' | strip_slash}}" />
+    {% capture canonical %}http://promisesaplus.com{{page.url | remove:'index.html' | remove:'.html' | strip_slash}}{% endcapture %}
+    <link rel="canonical" href="{{canonical}}" />
   </head>
 
   <body class="{{page.bodyClass}}">
