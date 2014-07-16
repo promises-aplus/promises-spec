@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>{{page.title}}</title>
+
+    <script>
+      "use strict";
+      if (location.href.indexOf("promises-aplus.github.io") !== -1) {
+        location.href = "http://promisesaplus.com{{page.url}}";
+      }
+    </script>
+
     <link rel="stylesheet" href="assets/stylesheet.css" />
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <link rel="canonical" href="http://promisesaplus.com{{page.url}}"/>
