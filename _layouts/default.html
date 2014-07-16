@@ -4,17 +4,18 @@
     <meta charset="utf-8" />
     <title>{{page.title}}</title>
 
+    {% capture canonical %}http://promisesaplus.com{{page.url | remove:'index.html' | remove:'.html' | strip_slash}}{% endcapture %}
+
     <script>
       "use strict";
-      if (location.href.indexOf("promises-aplus.github.io") !== -1) {
-        location.href = "http://promisesaplus.com{{page.url}}";
+      if (location.href !== "{{canonical}}") {
+        location.href = "{{canonical}}";
       }
     </script>
 
     <link rel="stylesheet" href="assets/stylesheet.css" />
     <link rel="shortcut icon" href="assets/favicon.ico" />
 
-    {% capture canonical %}http://promisesaplus.com{{page.url | remove:'index.html' | remove:'.html' | strip_slash}}{% endcapture %}
     <link rel="canonical" href="{{canonical}}" />
   </head>
 
