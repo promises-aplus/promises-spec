@@ -29,26 +29,14 @@ Finally, the core Promises/A+ specification does not deal with how to create, fu
 
 A promise must be in one of three states: pending, fulfilled, or rejected.
 
-<!-- Workaround Jekyll rendering bug for single-item nested lists by switching to HTML :( -->
-<ol>
-<li>When pending, a promise:
-    <ol>
-        <li>may transition to either the fulfilled or rejected state.</li>
-    </ol>
-</li>
-<li>When fulfilled, a promise:
-    <ol>
-        <li>must not transition to any other state.</li>
-        <li>must have a value, which must not change.</li>
-    </ol>
-</li>
-<li>When rejected, a promise:
-    <ol>
-        <li>must not transition to any other state.</li>
-        <li>must have a reason, which must not change.</li>
-    </ol>
-</li>
-</ol>
+1. When pending, a promise:
+    1. may transition to either the fulfilled or rejected state.
+1. When fulfilled, a promise:
+    1. must not transition to any other state.
+    1. must have a value, which must not change.
+1. When rejected, a promise:
+    1. must not transition to any other state.
+    1. must have a reason, which must not change.
 
 Here, "must not change" means immutable identity (i.e. `===`), but does not imply deep immutability.
 
@@ -58,7 +46,7 @@ A promise must provide a `then` method to access its current or eventual value o
 
 A promise's `then` method accepts two arguments:
 
-```
+```js
 promise.then(onFulfilled, onRejected)
 ```
 
@@ -80,7 +68,7 @@ promise.then(onFulfilled, onRejected)
     1. If/when `promise` is rejected, all respective `onRejected` callbacks must execute in the order of their originating calls to `then`.
 1. `then` must return a promise [[3.3](#notes)].
 
-    ```
+    ```js
     promise2 = promise1.then(onFulfilled, onRejected);
     ```
 
