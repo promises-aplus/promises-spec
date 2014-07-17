@@ -8,7 +8,7 @@
 
     <script>
       "use strict";
-      if (location.href !== "{{canonical}}") {
+      if (location.href.indexOf("github.io") !== -1) {
         location.href = "{{canonical}}";
       }
     </script>
