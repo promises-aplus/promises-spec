@@ -156,12 +156,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/zolmeister/promiz">Promiz</a></td>
-            <td>A small but powerful promise library, at 590 bytes (min + gzip)</td>
-            <td>1.1</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/zolmeister/promiz">Promiz Micro</a></td>
-            <td>The smallest promise library at 228 bytes (min + gzip)</td>
+            <td>Tiny (590 bytes), with an even smaller micro version at 228 bytes (min + gzip)</td>
             <td>1.1</td>
         </tr>
         <tr>
