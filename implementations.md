@@ -160,6 +160,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/zolmeister/promiz">Promiz</a></td>
+            <td>Tiny (590 bytes), with an even smaller micro version at 228 bytes (min + gzip)</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kriskowal/q">Q</a></td>
             <td>A tool for making and composing asynchronous promises in JavaScript</td>
             <td>1.0</td>
