@@ -55,6 +55,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/kevinconway/Deferred.js">Deferred.js</a></td>
+            <td>Deferreds, promises, and callback aggregators.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/shanewholloway/node-fate">fate</a></td>
             <td>Promises/A+ closure-based implementation</td>
             <td>1.0</td>
