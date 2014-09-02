@@ -76,7 +76,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/stopsopa/ipromise">ipromise</a></td>
-            <td>Standalone, lightweight and tested implementation of Promises/A+ </td>
+            <td>Standalone, lightweight and tested implementation of Promises/A+  </td>
             <td>1.1</td>
         </tr>
         <tr>
