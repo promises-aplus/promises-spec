@@ -56,12 +56,12 @@ promise.then(onFulfilled, onRejected)
     1. it must be called after `promise` is rejected, with `promise`'s reason as its first argument.
     1. it must not be called before `promise` is rejected.
     1. it must not be called more than once.
-1. `onFulfilled` or `onRejected` must not be called until the [execution context](http://es5.github.io/#x10.3) stack contains only platform code. [[3.1](#notes)].
-1. `onFulfilled` and `onRejected` must be called as functions (i.e. with no `this` value). [[3.2](#notes)]
+1. `onFulfilled` or `onRejected` must not be called until the [execution context](http://es5.github.io/#x10.3) stack contains only platform code. [[3.1](#point-67)].
+1. `onFulfilled` and `onRejected` must be called as functions (i.e. with no `this` value). [[3.2](#point-69)]
 1. `then` may be called multiple times on the same promise.
     1. If/when `promise` is fulfilled, all respective `onFulfilled` callbacks must execute in the order of their originating calls to `then`.
     1. If/when `promise` is rejected, all respective `onRejected` callbacks must execute in the order of their originating calls to `then`.
-1. `then` must return a promise [[3.3](#notes)].
+1. `then` must return a promise [[3.3](#point-71)].
 
     ```js
     promise2 = promise1.then(onFulfilled, onRejected);
@@ -81,12 +81,12 @@ This treatment of thenables allows promise implementations to interoperate, as l
 To run `[[Resolve]](promise, x)`, perform the following steps:
 
 1. If `promise` and `x` refer to the same object, reject `promise` with a `TypeError` as the reason.
-1. If `x` is a promise, adopt its state [[3.4](#notes)]:
+1. If `x` is a promise, adopt its state [[3.4](#point-73)]:
    1. If `x` is pending, `promise` must remain pending until `x` is fulfilled or rejected.
    1. If/when `x` is fulfilled, fulfill `promise` with the same value.
    1. If/when `x` is rejected, reject `promise` with the same reason.
 1. Otherwise, if `x` is an object or function,
-   1. Let `then` be `x.then`. [[3.5](#notes)]
+   1. Let `then` be `x.then`. [[3.5](#point-75)]
    1. If retrieving the property `x.then` results in a thrown exception `e`, reject `promise` with `e` as the reason.
    1. If `then` is a function, call it with `x` as `this`, first argument `resolvePromise`, and second argument `rejectPromise`, where:
       1. If/when `resolvePromise` is called with a value `y`, run `[[Resolve]](promise, y)`.
@@ -98,7 +98,7 @@ To run `[[Resolve]](promise, x)`, perform the following steps:
    1. If `then` is not a function, fulfill `promise` with `x`.
 1. If `x` is not an object or function, fulfill `promise` with `x`.
 
-If a promise is resolved with a thenable that participates in a circular thenable chain, such that the recursive nature of `[[Resolve]](promise, thenable)` eventually causes `[[Resolve]](promise, thenable)` to be called again, following the above algorithm will lead to infinite recursion. Implementations are encouraged, but not required, to detect such recursion and reject `promise` with an informative `TypeError` as the reason. [[3.6](#notes)]
+If a promise is resolved with a thenable that participates in a circular thenable chain, such that the recursive nature of `[[Resolve]](promise, thenable)` eventually causes `[[Resolve]](promise, thenable)` to be called again, following the above algorithm will lead to infinite recursion. Implementations are encouraged, but not required, to detect such recursion and reject `promise` with an informative `TypeError` as the reason. [[3.6](#point-77)]
 
 ## Notes
 
