@@ -75,6 +75,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/stopsopa/ipromise">ipromise</a></td>
+            <td>Standalone, lightweight and tested implementation of Promises/A+  </td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/novemberborn/legendary">Legendary</a></td>
             <td>Combines promise subclassing with sugar inspired by when.js, Q and async.</td>
             <td>1.1</td>
