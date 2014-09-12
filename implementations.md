@@ -112,7 +112,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/ondras/promise">ondras/promise</a></td>
             <td>Straightforward client-side Promises/A+ implementation, with XHR, setTimeout etc.</td>
-            <td>1.0</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/potch/promise.js">potch/promise.js</a></td>
