@@ -10,8 +10,8 @@ There are many conformant implementations of Promises/A+. Here are the ones we k
 Conformant implementations are encouraged to include [the Promises/A+ logo](https://rawgithub.com/promises-aplus/promises-spec/master/logo.svg) in their README files with a link to the specification, using code like the following:
 
 ```html
-<a href="http://promisesaplus.com/">
-    <img src="http://promisesaplus.com/assets/logo-small.png" alt="Promises/A+ logo"
+<a href="https://promisesaplus.com/">
+    <img src="https://promisesaplus.com/assets/logo-small.png" alt="Promises/A+ logo"
          title="Promises/A+ 1.0 compliant" align="right" />
 </a>
 ```
