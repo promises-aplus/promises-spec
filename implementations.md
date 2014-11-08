@@ -284,5 +284,10 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td><a href="https://github.com/MSNexploder/SHXPromise">SHXPromise</a></td>
             <td>A lightweight implementation of Promises/A+ for iOS and OS X.</td>
         </tr>
+        <tr>
+            <td>Perl</td>
+            <td><a href="https://github.com/stevan/promises-perl">stevan/promises-perl</a></td>
+            <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl.</td>
+        </tr>
     </tbody>
 </table>
