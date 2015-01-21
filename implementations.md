@@ -200,6 +200,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/vilic/thenfail">ThenFail</a></td>
+            <td>Just another Promises/A+ implementation written in TypeScript</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/dfilatov/jspromise">vow</a></td>
             <td>Promises/A+ implementation</td>
             <td>1.0</td>
