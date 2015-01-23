@@ -110,6 +110,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/Octane/Promise">Octane/Promise</a></td>
+            <td>Promises/A+ compliant implementation of ES6 promises for browsers and Node.js</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/ondras/promise">ondras/promise</a></td>
             <td>Straightforward client-side Promises/A+ implementation, with XHR, setTimeout etc.</td>
             <td>1.1</td>
