@@ -30,6 +30,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
     </thead>
     <tbody>
         <tr>
+            <td><a href="https://github.com/abdulapopoola/Adehun">Adehun</a></td>
+            <td>Light weight Promises/A+ implementation; good for learning about the Promise/A+ spec.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/briancavalier/avow">avow</a></td>
             <td>Example Promises/A+ implementation. Simple, tiny, fast, fully async</td>
             <td>1.0</td>
