@@ -304,5 +304,10 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td><a href="https://github.com/stevan/promises-perl">stevan/promises-perl</a></td>
             <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl.</td>
         </tr>
+        <tr>
+            <td>C#</td>
+            <td><a href="https://github.com/Real-Serious-Games/c-sharp-promise">Real-Serious-Games/c-sharp-promise</a></td>
+            <td>An unit-tested implementation of the Promises/A+ pattern for asynchronous programming in C#.</td>
+        </tr>
     </tbody>
 </table>
