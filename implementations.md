@@ -45,6 +45,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/daninnewyork/bloodhound">bloodhound</a></td>
+            <td>Feature-rich promise library with performance timing and reporting baked in.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/petkaantonov/bluebird">bluebird</a></td>
             <td>Full featured Promises/A+ implementation with exceptionally good performance</td>
             <td>1.1</td>
