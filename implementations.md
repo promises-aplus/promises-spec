@@ -220,6 +220,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/DirtyHairy/typescript-deferred">typescript-deferred</a></td>
+            <td>A tiny Promises/A+ implementation written in Typescript</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/dfilatov/jspromise">vow</a></td>
             <td>Promises/A+ implementation</td>
             <td>1.0</td>
@@ -233,11 +238,6 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td><a href="https://github.com/jharding/yapa">yapa</a></td>
             <td>Yet another Promises/A+ implementation</td>
             <td>1.0</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/DirtyHairy/typescript-deferred">typescript-deferred</a></td>
-            <td>A tiny Promises/A+ implementation written in Typescript</td>
-            <td>1.1</td>
         </tr>
     </tbody>
 </table>
