@@ -239,6 +239,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Yet another Promises/A+ implementation</td>
             <td>1.0</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/loveky/yapi.js">yapi.js</a></td>
+            <td>Yet another Promises/A+ implementation which works in both browser and node</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
