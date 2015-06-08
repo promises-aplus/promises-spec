@@ -239,6 +239,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Yet another Promises/A+ implementation which works in both browser and node</td>
             <td>1.1</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/gobwas/broody-promises">broody-promises</a></td>
+            <td>Promises with `.value()` method, that brings ability to get value of the chain synchronously</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
