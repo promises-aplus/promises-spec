@@ -244,6 +244,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>Yet another Promises/A+ implementation which works in both browser and node</td>
             <td>1.1</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/bluejava/zousan">Zousan</a></td>
+            <td>A lightning fast, very small (<1k) Promises/A+ 1.1 Implementation (MIT license)</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
