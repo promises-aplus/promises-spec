@@ -200,6 +200,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/danthareja/robin-egg-bluebird">Robin Egg Bluebird</a></td>
+            <td>A tiny Promises/A+ compliant implementation inspired by the official Crayola color.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/tildeio/rsvp.js">rsvp.js</a></td>
             <td>A lightweight library that provides tools for organizing asynchronous code</td>
             <td>1.1</td>
@@ -335,9 +340,14 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl.</td>
         </tr>
         <tr>
-	    <td>QML</td>
+            <td>QML</td>
             <td><a href="https://github.com/benlau/quickpromise">Quick Promise</a></td>
             <td>Promises/A+ compliant implementation in QML</td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td><a href="https://github.com/Real-Serious-Games/c-sharp-promise">Real-Serious-Games/c-sharp-promise</a></td>
+            <td>An unit-tested implementation of the Promises/A+ pattern for asynchronous programming in C#.</td>
         </tr>
     </tbody>
 </table>
