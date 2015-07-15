@@ -195,6 +195,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/danthareja/robin-egg-bluebird">Robin Egg Bluebird</a></td>
+            <td>A tiny Promises/A+ compliant implementation inspired by the official Crayola color.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/tildeio/rsvp.js">rsvp.js</a></td>
             <td>A lightweight library that provides tools for organizing asynchronous code</td>
             <td>1.1</td>
