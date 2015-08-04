@@ -80,6 +80,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/diogocampos/promise-coffee">diogocampos/promise-coffee</a></td>
+            <td>Promises/A+ spec-compliant promises in less than 80 lines of readable CoffeeScript</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/shanewholloway/node-fate">fate</a></td>
             <td>Promises/A+ closure-based implementation</td>
             <td>1.0</td>
