@@ -70,6 +70,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/briancavalier/creed">creed</a></td>
+            <td>Functionally-oriented async with coroutines, promises, ES2015 iterables, fantasy-land</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/malko/D.js">D.js</a></td>
             <td>A tiny Promises/A+ implementation for Node.js and the browser with some extras</td>
             <td>1.1</td>
@@ -248,7 +253,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td><a href="https://github.com/kode4food/welsh">Welsh</a></td>
             <td>A+ Promises and Deferreds à la Twisted</a></td>
             <td>1.1</td>
-        </tr>        
+        </tr>
         <tr>
             <td><a href="https://github.com/cujojs/when">when</a></td>
             <td>cujoJS's promise implementation and async toolkit</td>
