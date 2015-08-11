@@ -309,6 +309,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/hprose/hprose-nodejs">Hprose</a></td>
+            <td>Hprose is a Serialization and RPC library with Promise/A+ implementation.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/behance/nbd.js/blob/master/trait/promise.js">nbd.js</a></td>
             <td>Promises as an inheritable trait from nbd.js</td>
             <td>1.1</td>
