@@ -274,6 +274,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>A lightning fast, very small (<1k) Promises/A+ 1.1 Implementation (MIT license)</td>
             <td>1.1</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/xieranmaya/Promise3">Zousan</a></td>
+            <td>A very easy-to-read source code of Promise implementation, good to learn how Promise works inside</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
