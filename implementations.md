@@ -351,6 +351,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
         </tr>
         <tr>
             <td>Objective-C</td>
+            <td><a href="https://github.com/dizzus/PromiseKit">PromiseKit</a></td>
+            <td>A very simple and lightweight Objective-C framework based on Promises/A+ specification.</td>
+        </tr>
+        <tr>
+            <td>Objective-C</td>
             <td><a href="https://github.com/couchdeveloper/RXPromise">RXPromise</a></td>
             <td>An Objective-C Class which implements the Promises/A+ specification.</td>
         </tr>
