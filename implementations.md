@@ -260,6 +260,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/manvalls/y-resolver">y-resolver</a></td>
+            <td>Implementation of a backwards compatible extension to the Promises/A+ spec</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/ysmood/yaku">yaku</a></td>
             <td>A fast, lightweight, error friendly and ES6 compatible implementation (~3.5KB)</td>
             <td>1.1</td>
