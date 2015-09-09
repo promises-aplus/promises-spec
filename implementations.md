@@ -231,7 +231,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/vilic/thenfail">ThenFail</a></td>
-            <td>Just another Promises/A+ implementation written in TypeScript</td>
+            <td>Promises/A+ implementation in TypeScript with the ability to break the chain</td>
             <td>1.1</td>
         </tr>
         <tr>
