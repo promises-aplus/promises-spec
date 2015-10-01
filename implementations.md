@@ -241,7 +241,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/vilic/thenfail">ThenFail</a></td>
-            <td>Just another Promises/A+ implementation written in TypeScript</td>
+            <td>Promises/A+ implementation in TypeScript with the ability to break the chain</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -262,6 +262,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/cujojs/when">when</a></td>
             <td>cujoJS's promise implementation and async toolkit</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/manvalls/y-resolver">y-resolver</a></td>
+            <td>Implementation of a backwards compatible extension to the Promises/A+ spec</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -348,6 +353,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>Python</td>
             <td><a href="https://github.com/xogeny/aplus">xogeny/aplus</a></td>
             <td>An implementation of the Promises/A+ specification and test suite in Python</td>
+        </tr>
+        <tr>
+            <td>Objective-C</td>
+            <td><a href="https://github.com/dizzus/PromiseKit">PromiseKit</a></td>
+            <td>A very simple and lightweight Objective-C framework based on Promises/A+ specification.</td>
         </tr>
         <tr>
             <td>Objective-C</td>
