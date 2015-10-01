@@ -225,6 +225,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/William17/taxi">Taxi</a></td>
+            <td>Simple and Annotated. A tiny example Promises/A+ implementation. Just for learning.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/nobuoka/Ten.Promise">Ten.Promise</a></td>
             <td>Promises/A+ implementation written in TypeScript</td>
             <td>1.0</td>
