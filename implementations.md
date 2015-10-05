@@ -180,18 +180,23 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/bramstein/promis">Promis</a></td>
+            <td>A small embeddable Promise polyfill</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/RubenVerborgh/promiscuous/">promiscuous</a></td>
             <td>A minimal and fast promise/deferred implementation</td>
             <td>1.0</td>
         </tr>
         <tr>
-            <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
-            <td>A full, documented, standalone Promises/A+ 1.1 implementation for TypeScript / JavaScript / Node.js with some additional features to improve productivity</td>
+            <td><a href="https://github.com/xieranmaya/Promise3">Promise3</a></td>
+            <td>A very easy-to-read source code of Promise implementation, good to learn how Promise works inside</td>
             <td>1.1</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/bramstein/promis">Promis</a></td>
-            <td>A small embeddable Promise polyfill</td>
+            <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
+            <td>A full, documented, standalone Promises/A+ 1.1 implementation for TypeScript / JavaScript / Node.js with some additional features to improve productivity</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -307,6 +312,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td><a href="https://github.com/sebastian-software/core/blob/master/source/class/core/event/Promise.js">Core</a></td>
             <td>A fine foundation for JavaScript projects</td>
             <td>1.0</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/hprose/hprose-nodejs">Hprose</a></td>
+            <td>Hprose is a Serialization and RPC library with Promise/A+ implementation.</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/behance/nbd.js/blob/master/trait/promise.js">nbd.js</a></td>
