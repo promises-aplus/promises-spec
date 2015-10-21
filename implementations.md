@@ -135,6 +135,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/chunpu/min-promise">min-promise</a></td>
+            <td>Small and clean Promises/A+ implementation in a hundred lines</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/aheckmann/mpromise">mpromise</a></td>
             <td>A Promises/A+ conformant implementation, written for mongoose</td>
             <td>1.1</td>
