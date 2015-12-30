@@ -402,22 +402,32 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
         <tr>
             <td>Objective-C</td>
             <td><a href="https://github.com/dizzus/PromiseKit">PromiseKit</a></td>
-            <td>A very simple and lightweight Objective-C framework based on Promises/A+ specification.</td>
+            <td>A very simple and lightweight Objective-C framework based on Promises/A+ specification</td>
         </tr>
         <tr>
             <td>Objective-C</td>
             <td><a href="https://github.com/couchdeveloper/RXPromise">RXPromise</a></td>
-            <td>An Objective-C Class which implements the Promises/A+ specification.</td>
+            <td>An Objective-C Class which implements the Promises/A+ specification</td>
         </tr>
         <tr>
             <td>Objective-C</td>
             <td><a href="https://github.com/MSNexploder/SHXPromise">SHXPromise</a></td>
-            <td>A lightweight implementation of Promises/A+ for iOS and OS X.</td>
+            <td>A lightweight implementation of Promises/A+ for iOS and OS X</td>
+        </tr>
+        <tr>
+            <td>Swift</td>
+            <td><a href="https://github.com/couchdeveloper/FutureLib">FutureLib</a></td>
+            <td>A pure Swift 2 library implementing futures and promises, inspired by Scala</td>
+        </tr>
+        <tr>
+            <td>Swift</td>
+            <td><a href="https://github.com/onmyway133/Then">Then</a></td>
+            <td>A simple Promises/A+ implementation in Swift using associated Result enum and generics</td>
         </tr>
         <tr>
             <td>Perl</td>
             <td><a href="https://github.com/stevan/promises-perl">stevan/promises-perl</a></td>
-            <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl.</td>
+            <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl</td>
         </tr>
         <tr>
             <td>QML</td>
@@ -427,7 +437,7 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
         <tr>
             <td>C#</td>
             <td><a href="https://github.com/Real-Serious-Games/c-sharp-promise">Real-Serious-Games/c-sharp-promise</a></td>
-            <td>An unit-tested implementation of the Promises/A+ pattern for asynchronous programming in C#.</td>
+            <td>An unit-tested implementation of the Promises/A+ pattern for asynchronous programming in C#</td>
         </tr>
         <tr>
             <td>PHP</td>
