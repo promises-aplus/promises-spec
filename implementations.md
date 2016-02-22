@@ -196,7 +196,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/Ziriax/Promistix">Promistix</a></td>
-            <td>A very tiny (less than 100 lines of Javascript code) implementation, written just for fun. [(This code unintentionally found a bug in the specs in 2014)](https://github.com/promises-aplus/promises-tests/issues/59)</td>
+            <td>A very tiny (less than 100 lines of Javascript code) implementation, written just for fun. This code unintentionally uncovered a bug in the specs in 2014! (https://github.com/promises-aplus/promises-tests/issues/59)</td>
             <td>1.1</td>
         </tr>
         <tr>
