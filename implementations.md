@@ -215,6 +215,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/Ziriax/Promistix">Promistix</a></td>
+            <td>A very tiny (less than 100 lines of Javascript code) implementation, written just for fun. This code unintentionally <a href="https://github.com/promises-aplus/promises-tests/issues/59">uncovered a bug in the specs in 2014</a>!</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/reflex/promix">Promix</a></td>
             <td>Mix promises with callbacks for improved control flow</td>
             <td>1.0</td>
@@ -311,7 +316,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/bluejava/zousan">Zousan</a></td>
-            <td>A lightning fast, very small (<1k) Promises/A+ 1.1 Implementation (MIT license)</td>
+            <td>A lightning fast, very small (&lt;1k) Promises/A+ 1.1 Implementation (MIT license)</td>
             <td>1.1</td>
         </tr>
     </tbody>
