@@ -126,7 +126,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/brianmhunt/MutexPromise">MutexPromise</a></td>
-            <td>An implementation for developing & debugging (includes events, temporal mutual exclusion, uncaught checking, creation & chaining call stacks)</td>
+            <td>An implementation for developing & debugging with Promises (includes events, temporal mutual exclusion, uncaught checking, creation & chaining call stacks)</td>
             <td>1.1</td>
         </tr>
         <tr>
