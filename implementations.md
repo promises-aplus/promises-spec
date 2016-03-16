@@ -100,6 +100,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/Boelroy/Future.js">Future</a></td>
+            <td>Original concept of (futures and promises) and tiny implementation of Promises/A+</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/stopsopa/ipromise">ipromise</a></td>
             <td>Standalone, lightweight and tested implementation of Promises/A+  </td>
             <td>1.1</td>
