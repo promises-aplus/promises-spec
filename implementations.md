@@ -215,6 +215,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/cuipengfei/Spikes/blob/master/js/promise/RWPromise.js">RWPromise</a></td>
+            <td>88 lines of concise code, with comments annotating which clause of the spec each line to conforming to.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/tildeio/rsvp.js">rsvp.js</a></td>
             <td>A lightweight library that provides tools for organizing asynchronous code</td>
             <td>1.1</td>
