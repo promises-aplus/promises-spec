@@ -170,6 +170,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/glebec/potential">Potential</a></td>
+            <td>Small Promises/A+ library focusing on simple, annotated source code for educational purposes</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/satchmorun/promeso">promeso</a></td>
             <td>A little Promises/A+ implementation</td>
             <td>1.0</td>
