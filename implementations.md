@@ -338,6 +338,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>YUI is a free, open source JavaScript library for building richly interactive web applications</td>
             <td>1.0</td>
         </tr>
+        <tr>
+            <td><a href="https://api.jquery.com/category/deferred-object/">jQuery (3.0 or newer)</a></td>
+            <td>jQuery is a fast, small, and feature-rich JavaScript library dealing with HTML document traversal, manipulation, event handling, animation, and Ajax.</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
