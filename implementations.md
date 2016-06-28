@@ -18,6 +18,12 @@ Conformant implementations are encouraged to include [the Promises/A+ logo](http
 
 Also, if your implementation is published in the npm registry, we suggest using [the "promises-aplus" keyword](https://npmjs.org/browse/keyword/promises-aplus).
 
+## The ECMAScript Specification
+
+The [ECMAScript specification](http://tc39.github.io/ecma262/) includes a section titled "[Promise Objects](https://tc39.github.io/ecma262/#sec-promise-objects)". This section mandates that a conformant implementation of ECMAScript have a `Promise` global. Largely due to the actions of the Promises/A+ community, the `Promise` global specified by ECMAScript and present in any conforming JavaScript engine is indeed a Promises/A+ implementation!
+
+The "Promise Objects" section of the ECMAScript specification has many additional requirements for the processing model beyond those given in Promises/A+. In other words, people can implement promises libraries that conform to Promises/A+, without necessarily conforming to the ECMAScript specification for promise objects. In this way, ECMAScript's `Promise` global is just one of many Promises/A+ implementations.
+
 ## Standalone
 
 <table>
@@ -85,6 +91,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/msrose/denote">denote</a></td>
+            <td>Minimalistic Promises/A+ compliant JavaScript promise implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/diogocampos/promise-coffee">diogocampos/promise-coffee</a></td>
             <td>Promises/A+ spec-compliant promises in less than 80 lines of readable CoffeeScript</td>
             <td>1.1</td>
@@ -102,6 +113,16 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/tests-always-included/fid-promise">FidPromise</a></td>
             <td>Promise implementation that is readable and debuggable</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/Boelroy/Future.js">Future</a></td>
+            <td>Original concept of (futures and promises) and tiny implementation of Promises/A+</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/hbarcelos/promise-js">hbarcelos/promise-js</a></td>
+            <td>Simple Promises/A+ JavaScript implementation</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -125,8 +146,18 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/chunpu/min-promise">min-promise</a></td>
+            <td>Small and clean Promises/A+ implementation in a hundred lines</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/aheckmann/mpromise">mpromise</a></td>
             <td>A Promises/A+ conformant implementation, written for mongoose</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/brianmhunt/MutexPromise">MutexPromise</a></td>
+            <td>An implementation for developing & debugging with Promises</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -205,6 +236,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/Ziriax/Promistix">Promistix</a></td>
+            <td>A very tiny (less than 100 lines of Javascript code) implementation, written just for fun. This code unintentionally <a href="https://github.com/promises-aplus/promises-tests/issues/59">uncovered a bug in the specs in 2014</a>!</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/reflex/promix">Promix</a></td>
             <td>Mix promises with callbacks for improved control flow</td>
             <td>1.0</td>
@@ -222,6 +258,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
         <tr>
             <td><a href="https://github.com/danthareja/robin-egg-bluebird">Robin Egg Bluebird</a></td>
             <td>A tiny Promises/A+ compliant implementation inspired by the official Crayola color.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/cuipengfei/Spikes/blob/master/js/promise/RWPromise.js">RWPromise</a></td>
+            <td>88 lines of concise code, with comments annotating which clause of the spec each line conforms to</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -265,8 +306,13 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/elnarddogg/wee-promise">WeePromise</a></td>
+            <td>An ultra light (&lt;1k minified/gzipped) Promises/A+ implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kode4food/welsh">Welsh</a></td>
-            <td>A+ Promises and Deferreds à la Twisted</a></td>
+            <td>A+ Promises and Deferreds à la Twisted</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -296,7 +342,7 @@ Also, if your implementation is published in the npm registry, we suggest using 
         </tr>
         <tr>
             <td><a href="https://github.com/bluejava/zousan">Zousan</a></td>
-            <td>A lightning fast, very small (<1k) Promises/A+ 1.1 Implementation (MIT license)</td>
+            <td>A lightning fast, very small (&lt;1k) Promises/A+ 1.1 Implementation (MIT license)</td>
             <td>1.1</td>
         </tr>
     </tbody>
@@ -343,6 +389,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>YUI is a free, open source JavaScript library for building richly interactive web applications</td>
             <td>1.0</td>
         </tr>
+        <tr>
+            <td><a href="https://api.jquery.com/category/deferred-object/">jQuery (3.0 or newer)</a></td>
+            <td>jQuery is a fast, small, and feature-rich JavaScript library dealing with HTML document traversal, manipulation, event handling, animation, and Ajax.</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
@@ -372,22 +423,32 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
         <tr>
             <td>Objective-C</td>
             <td><a href="https://github.com/dizzus/PromiseKit">PromiseKit</a></td>
-            <td>A very simple and lightweight Objective-C framework based on Promises/A+ specification.</td>
+            <td>A very simple and lightweight Objective-C framework based on Promises/A+ specification</td>
         </tr>
         <tr>
             <td>Objective-C</td>
             <td><a href="https://github.com/couchdeveloper/RXPromise">RXPromise</a></td>
-            <td>An Objective-C Class which implements the Promises/A+ specification.</td>
+            <td>An Objective-C Class which implements the Promises/A+ specification</td>
         </tr>
         <tr>
             <td>Objective-C</td>
             <td><a href="https://github.com/MSNexploder/SHXPromise">SHXPromise</a></td>
-            <td>A lightweight implementation of Promises/A+ for iOS and OS X.</td>
+            <td>A lightweight implementation of Promises/A+ for iOS and OS X</td>
+        </tr>
+        <tr>
+            <td>Swift</td>
+            <td><a href="https://github.com/couchdeveloper/FutureLib">FutureLib</a></td>
+            <td>A pure Swift 2 library implementing futures and promises, inspired by Scala</td>
+        </tr>
+        <tr>
+            <td>Swift</td>
+            <td><a href="https://github.com/onmyway133/Then">Then</a></td>
+            <td>A simple Promises/A+ implementation in Swift using associated Result enum and generics</td>
         </tr>
         <tr>
             <td>Perl</td>
             <td><a href="https://github.com/stevan/promises-perl">stevan/promises-perl</a></td>
-            <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl.</td>
+            <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl</td>
         </tr>
         <tr>
             <td>QML</td>
@@ -397,7 +458,12 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
         <tr>
             <td>C#</td>
             <td><a href="https://github.com/Real-Serious-Games/c-sharp-promise">Real-Serious-Games/c-sharp-promise</a></td>
-            <td>An unit-tested implementation of the Promises/A+ pattern for asynchronous programming in C#.</td>
+            <td>An unit-tested implementation of the Promises/A+ pattern for asynchronous programming in C#</td>
+        </tr>
+        <tr>
+            <td>PHP</td>
+            <td><a href="https://github.com/guzzle/promises">Guzzle Promises</a></td>
+            <td>Promises/A+ implementation in PHP that handles promise chaining and resolution iteratively, allowing for "infinite" promise chaining, while keeping the stack size constant.</td>
         </tr>
     </tbody>
 </table>
