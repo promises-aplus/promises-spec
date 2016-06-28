@@ -135,6 +135,11 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/brianmhunt/MutexPromise">MutexPromise</a></td>
+            <td>An implementation for developing & debugging with Promises (includes events, temporal mutual exclusion, uncaught checking, creation & chaining call stacks)</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/val1984/Naive-Promesse">Naive Promesse</a></td>
             <td>Naïve implementation of Promises/A+ specification</td>
             <td>1.0</td>
