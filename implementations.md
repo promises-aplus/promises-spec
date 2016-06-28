@@ -13,6 +13,12 @@ Conformant implementations are encouraged to include [the Promises/A+ logo](http
 
 Also, if your implementation is published in the npm registry, we suggest using [the "promises-aplus" keyword](https://npmjs.org/browse/keyword/promises-aplus).
 
+## The ECMAScript Specification
+
+The [ECMAScript specification](http://tc39.github.io/ecma262/) includes a section titled "[Promise Objects](https://tc39.github.io/ecma262/#sec-promise-objects)". This section mandates that a conformant implementation of ECMAScript have a `Promise` global. Largely due to the actions of the Promises/A+ community, the `Promise` global specified by ECMAScript and present in any conforming JavaScript engine is indeed a Promises/A+ implementation!
+
+The "Promise Objects" section of the ECMAScript specification has many additional requirements for the processing model beyond those given in Promises/A+. In other words, people can implement promises libraries that conform to Promises/A+, without necessarily conforming to the ECMAScript specification for promise objects. In this way, ECMAScript's `Promise` global is just one of many Promises/A+ implementations.
+
 ## Standalone
 
 <table>
