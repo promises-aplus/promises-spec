@@ -290,8 +290,13 @@ Also, if your implementation is published in the npm registry, we suggest using 
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/elnarddogg/wee-promise">WeePromise</a></td>
+            <td>An ultra light (<1k minified/gzipped) Promises/A+ implementation.</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kode4food/welsh">Welsh</a></td>
-            <td>A+ Promises and Deferreds à la Twisted</a></td>
+            <td>A+ Promises and Deferreds à la Twisted</td>
             <td>1.1</td>
         </tr>
         <tr>
