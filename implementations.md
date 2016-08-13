@@ -211,6 +211,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/djfm/promesse">promesse</a></td>
+            <td>A Promises/A+ implementation that tries to be concise using functional style while remaining easy to understand.</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/bramstein/promis">Promis</a></td>
             <td>A small embeddable Promise polyfill</td>
             <td>1.1</td>
