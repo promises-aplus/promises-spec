@@ -301,6 +301,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/Victory/vPromise">vPromise</a></td>
+            <td>Apache 2.0 Licensed, Promises/A+ implementation. <code>npm install vPromise</code></td>
+            <td>1.0</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/elnarddogg/wee-promise">WeePromise</a></td>
             <td>An ultra light (&lt;1k minified/gzipped) Promises/A+ implementation</td>
             <td>1.1</td>
