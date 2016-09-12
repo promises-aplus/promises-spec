@@ -96,6 +96,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/msuperina/es3-promise">es3-promise</a></td>
+            <td>An implementation of Promise then with ES3 syntax</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/shanewholloway/node-fate">fate</a></td>
             <td>Promises/A+ closure-based implementation</td>
             <td>1.0</td>
