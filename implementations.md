@@ -111,6 +111,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/bucharest-gold/fidelity">fidelity</a></td>
+            <td>A fast and simple Promise/A+ implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/tests-always-included/fid-promise">FidPromise</a></td>
             <td>Promise implementation that is readable and debuggable</td>
             <td>1.1</td>
