@@ -101,6 +101,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/msuperina/es3-promise">es3-promise</a></td>
+            <td>An implementation of Promise then with ES3 syntax</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/shanewholloway/node-fate">fate</a></td>
             <td>Promises/A+ closure-based implementation</td>
             <td>1.0</td>
@@ -109,6 +114,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td><a href="https://github.com/gameclosure/ff">ff</a></td>
             <td>Simplifies the most common use cases for series, parallel, and promise utilities</td>
             <td>1.0</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/bucharest-gold/fidelity">fidelity</a></td>
+            <td>A fast and simple Promise/A+ implementation</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/tests-always-included/fid-promise">FidPromise</a></td>
@@ -216,6 +226,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/djfm/promesse">promesse</a></td>
+            <td>A Promises/A+ implementation that tries to be concise using functional style while remaining easy to understand</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/bramstein/promis">Promis</a></td>
             <td>A small embeddable Promise polyfill</td>
             <td>1.1</td>
@@ -304,6 +319,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td><a href="https://github.com/dfilatov/jspromise">vow</a></td>
             <td>Promises/A+ implementation</td>
             <td>1.0</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/Victory/vPromise">vPromise</a></td>
+            <td>Apache 2.0 Licensed, Promises/A+ implementation</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/elnarddogg/wee-promise">WeePromise</a></td>
