@@ -480,5 +480,10 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td><a href="https://github.com/guzzle/promises">Guzzle Promises</a></td>
             <td>Promises/A+ implementation in PHP that handles promise chaining and resolution iteratively, allowing for "infinite" promise chaining, while keeping the stack size constant.</td>
         </tr>
+        <tr>
+            <td>Ceylon</td>
+            <td><a href="https://github.com/vietj/ceylon-promises">Ceylon Promises</a></td>
+            <td>A Ceylon implementation of the Promises/A+ specification.</td>
+        </tr>
     </tbody>
 </table>
