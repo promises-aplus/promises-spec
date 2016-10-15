@@ -432,6 +432,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
         </tr>
         <tr>
             <td>Python</td>
+            <td><a href="https://github.com/syrusakbary/promise">promise</a></td>
+            <td>A clean and generic implementation of the Promises/A+ specification in Python</td>
+        </tr>
+        <tr>
+            <td>Python</td>
             <td><a href="https://github.com/xogeny/aplus">xogeny/aplus</a></td>
             <td>An implementation of the Promises/A+ specification and test suite in Python</td>
         </tr>
