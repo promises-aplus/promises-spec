@@ -131,6 +131,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/HQidea/promise">HQidea/promise</a></td>
+            <td>A Promises/A+ implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/stopsopa/ipromise">ipromise</a></td>
             <td>Standalone, lightweight and tested implementation of Promises/A+  </td>
             <td>1.1</td>
