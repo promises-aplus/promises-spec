@@ -108,7 +108,7 @@ If a promise is resolved with a thenable that participates in a circular thenabl
 
 1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions.
 
-1. Generally, it will only be known that `x` is a true promise if it comes from the current implementation. This clause allows the use of implementation-specific means to adopt the state of known-conformant promises, as an optimization to avoid the more general thenable-handling procedure described in subsequent sections.
+1. Generally, it will only be known that `x` is a true promise if it comes from the current implementation. This clause allows the use of implementation-specific means to adopt the state of known-conformant promises which may be identified by a test such as `x instanceof Promise`, as an optimization to avoid the more general thenable-handling procedure described in subsequent sections.
 
 1. This procedure of first storing a reference to `x.then`, then testing that reference, and then calling that reference, avoids multiple accesses to the `x.then` property. Such precautions are important for ensuring consistency in the face of an accessor property, whose value could change between retrievals.
 
