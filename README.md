@@ -81,7 +81,7 @@ This treatment of thenables allows promise implementations to interoperate, as l
 To run `[[Resolve]](promise, x)`, perform the following steps:
 
 1. If `promise` and `x` refer to the same object, reject `promise` with a `TypeError` as the reason.
-1. (Optional) If `x` is known to be a promise, adopt its state [[3.4](#notes)]:
+1. (Recommended) If `x` is known to be a promise, adopt its state [[3.4](#notes)]:
    1. If `x` is pending, `promise` must remain pending until `x` is fulfilled or rejected.
    1. If/when `x` is fulfilled, fulfill `promise` with the same value.
    1. If/when `x` is rejected, reject `promise` with the same reason.
