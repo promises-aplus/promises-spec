@@ -360,6 +360,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>A lightning fast, very small (&lt;1k) Promises/A+ 1.1 Implementation (MIT license)</td>
             <td>1.1</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/xieranmaya/Promise3">Promise3</a></td>
+            <td>A very easy-to-read source code of Promise implementation, good to learn how Promise works inside</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
