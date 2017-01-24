@@ -409,6 +409,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>jQuery is a fast, small, and feature-rich JavaScript library dealing with HTML document traversal, manipulation, event handling, animation, and Ajax.</td>
             <td>1.1</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/angular/zone.js">zone.js(0.7.7 or newer)</a></td>
+            <td>A Zone is an execution context that persists across async tasks.</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
