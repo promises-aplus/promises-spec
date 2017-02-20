@@ -126,6 +126,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/guanguer/Given">Given</a></td>
+            <td>Given is a Promises/A+ spec implementation wrote for fun and learning purposes, using ES6 syntax</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/hbarcelos/promise-js">hbarcelos/promise-js</a></td>
             <td>Simple Promises/A+ JavaScript implementation</td>
             <td>1.1</td>
