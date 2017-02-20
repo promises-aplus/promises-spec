@@ -201,6 +201,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/kiltjs/parole">Parole</a></td>
+            <td>Another ES6 promise implementation compliant with Promises/A+</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/lazd/Pinky">Pinky</a></td>
             <td>An extremely tiny Promises/A+ implementation that passes the Promises/A+ test suite</td>
             <td>1.0</td>
