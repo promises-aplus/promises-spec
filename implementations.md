@@ -156,6 +156,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/RonNewcomb/promise">Lifelong.Promise</a></td>
+            <td>Lifelong implements the spec in a single, very strongly typed Typescript file, without extraneous identifiers.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kaerus-component/uP">microPromise</a></td>
             <td>Written for a nodejs + browser ArangoDB driver.</td>
             <td>1.1</td>
