@@ -141,6 +141,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/HQidea/promise">HQidea/promise</a></td>
+            <td>A Promises/A+ implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/stopsopa/ipromise">ipromise</a></td>
             <td>Standalone, lightweight and tested implementation of Promises/A+  </td>
             <td>1.1</td>
@@ -464,6 +469,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>ActionScript</td>
             <td><a href="https://github.com/CodeCatalyst/promise-as3">CodeCatalyst/promise-as3</a></td>
             <td>Promises/A+ compliant implementation in ActionScript 3.0</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td><a href="https://github.com/syrusakbary/promise">promise</a></td>
+            <td>A clean and generic implementation of the Promises/A+ specification in Python</td>
         </tr>
         <tr>
             <td>Python</td>
