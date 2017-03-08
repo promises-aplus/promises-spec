@@ -501,6 +501,16 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>A simple Promises/A+ implementation in Swift using associated Result enum and generics</td>
         </tr>
         <tr>
+            <td>Swift</td>
+            <td><a href="https://github.com/couchdeveloper/FutureLib">FutureLib</a></td>
+            <td>FutureLib is a pure Swift 2 library implementing Futures & Promises inspired by Scala.</td>
+        </tr>
+        <tr>
+            <td>Swift</td>
+            <td><a href="https://github.com/onmyway133/Then">Then</a></td>
+            <td>A simple Promise A+ in Swift using associated Result enum and generic.</td>
+        </tr>
+        <tr>
             <td>Perl</td>
             <td><a href="https://github.com/stevan/promises-perl">stevan/promises-perl</a></td>
             <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl</td>
