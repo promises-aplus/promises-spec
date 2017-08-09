@@ -1,3 +1,8 @@
+---
+layout: default
+title: Promises/A+ Credits
+---
+
 # Promises/A+ Credits
 
 ## Prior Art

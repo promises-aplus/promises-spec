@@ -1,3 +1,8 @@
+---
+layout: default
+title: Promises/A+ Changelog
+---
+
 # Promises/A+ Changelog
 
 ## [Version 1.1.1][] / 2014-05-05

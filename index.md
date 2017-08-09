@@ -1,3 +1,8 @@
+---
+layout: default
+title: Promises/A+
+bodyClass: spec
+---
 # Promises/A+
 
 **An open standard for sound, interoperable JavaScript promises&mdash;by implementers, for implementers.**

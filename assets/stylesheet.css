@@ -1,0 +1,434 @@
+/*******************************************************************************
+Slate Theme for Github Pages
+by Jason Costello, @jsncostello
+Modified by Domenic Denicola, @domenic, for this repo
+*******************************************************************************/
+
+/*******************************************************************************
+MeyerWeb Reset
+*******************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:focus {
+  outline: none;
+}
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+
+html {
+  box-sizing: border-box;
+  color:#373737;
+  font-size: 16px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  color: #333333;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  border-bottom: 1px dashed #cecece;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  margin: 10px 0 15px 0;
+}
+
+footer p {
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #007edf;
+  text-shadow: none;
+
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+}
+
+a:hover {
+  color: #0069ba;
+  text-shadow: #0090ff 0px 0px 2px;
+}
+
+footer a:hover {
+  color: #43adff;
+  text-shadow: #0090ff 0px 0px 2px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre, code {
+  width: 100%;
+  color: #222;
+  background-color: #fff;
+
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 14px;
+
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+pre {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  overflow: auto;
+}
+
+code {
+  padding: 3px;
+  margin: 0 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+pre code {
+  display: block;
+  box-shadow: none;
+}
+
+blockquote {
+  color: #666;
+  margin-bottom: 20px;
+  padding: 0 0 0 20px;
+  border-left: 3px solid #bbb;
+}
+
+ul, ol, dl {
+  margin-bottom: 15px
+}
+
+ul li {
+  list-style: outside;
+  margin-left: 20px;
+  margin-bottom: 0.5em;
+}
+
+ol li {
+  list-style: decimal inside;
+  padding-left: 20px;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+dl p {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+hr {
+  height: 1px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 1px dashed #cecece;
+}
+
+table {
+  border: 1px solid #373737;
+  margin-bottom: 20px;
+  text-align: left;
+ }
+
+th {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 10px;
+  background: #373737;
+  color: #fff;
+ }
+
+td {
+  padding: 10px;
+  border: 1px solid #373737;
+ }
+
+form {
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  background: #212121;
+  background: -moz-linear-gradient(top, #373737, #212121);
+  background: -webkit-linear-gradient(top, #373737, #212121);
+  background: -ms-linear-gradient(top, #373737, #212121);
+  background: -o-linear-gradient(top, #373737, #212121);
+  background: linear-gradient(top, #373737, #212121);
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+  padding: 50px 10px 30px 139px;
+  text-shadow: #111 0px 0px 10px;
+  position: relative;
+}
+h1:before {
+  content: '';
+  display: inline-block;
+  width: 82px;
+  height: 82px;
+  background: url(logo-small.png);
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 10px 50px 10px;
+}
+
+footer {
+  background: #212121;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer > a {
+  display: inline-block;
+  position: relative;
+  margin: 10px 20px 10px 0;
+}
+
+footer > a:not(:last-of-type)::after {
+    content: " | ";
+    color: white;
+    position: absolute;
+    right: -15px;
+}
+
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size:14px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+}
+
+/*******************************************************************************
+Numbering!
+*******************************************************************************/
+
+body {
+  counter-reset: h2 h3;
+}
+
+h2 {
+  counter-increment: h2;
+  counter-reset: h3;
+}
+body.spec h2::before {
+  content: counter(h2)". ";
+}
+
+h3 {
+  counter-increment: h3;
+}
+body.spec h3::before {
+  content: counter(h2)"."counter(h3)". ";
+}
+
+ol {
+  counter-reset: li;
+  margin-bottom: 0;
+}
+ol li {
+  list-style-type: none;
+  counter-increment: li;
+  margin-left: 1.5em;
+  margin-bottom: 0.3em;
+}
+ol li::before {
+  float: left;
+  margin-left: -5.5em;
+  width: 5.5em;
+  text-align: right;
+}
+h2 ~ ol li::before, h3 ~ h2 ~ ol li::before {
+  content: counter(h2)"."counters(li, ".")".\A0";
+}
+h3 ~ ol li::before {
+  content: counter(h2)"."counter(h3)"."counters(li, ".")".\A0";
+}
+
+/* Workaround Jekyll bug that inserts spurious lone <p>s */
+ol li p:first-of-type:last-of-type {
+    margin: 0;
+}
+ol li p {
+    margin-top: 0;
+}
+
+ul p:first-of-type:last-of-type {
+    display: inline;
+}
+
+/*****************************************
+* Linker!
+*****************************************/
+
+body {
+  position: relative;
+}
+
+a.anchor {
+  opacity: 0;
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  float: left;
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  text-align: right;
+}
+
+a.anchor::before {
+  content: "#";
+}
+
+*:hover > a.anchor {
+  opacity: 0.3;
+}
+
+*:hover > a.anchor:hover {
+  opacity: 1;
+}

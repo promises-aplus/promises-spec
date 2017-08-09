@@ -1,3 +1,8 @@
+---
+layout: default
+title: Conformant Promises/A+ Implementations
+---
+
 # Conformant Implementations
 
 There are many conformant implementations of Promises/A+. Here are the ones we know about. Note that an implementation's conformance is determined by it passing the [test suite](https://github.com/promises-aplus/promises-tests). If you pass the tests, feel free to send a pull request to get yourself on this list!
@@ -524,6 +529,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>PHP</td>
             <td><a href="https://github.com/guzzle/promises">Guzzle Promises</a></td>
             <td>Promises/A+ implementation in PHP that handles promise chaining and resolution iteratively, allowing for "infinite" promise chaining, while keeping the stack size constant.</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td><a href="https://github.com/ioweyou/iou-java">IOU</a></td>
+            <td>Promises/A+ for Java and <a href="https://github.com/ioweyou/iou-android">Android</a></td>
         </tr>
     </tbody>
 </table>
