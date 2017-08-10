@@ -525,5 +525,10 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td><a href="https://github.com/guzzle/promises">Guzzle Promises</a></td>
             <td>Promises/A+ implementation in PHP that handles promise chaining and resolution iteratively, allowing for "infinite" promise chaining, while keeping the stack size constant.</td>
         </tr>
+        <tr>
+            <td>PHP</td>
+            <td><a href="https://github.com/plvhx/promise">Simple Promise</a></td>
+            <td>This is a Promises/A+ implementation in PHP. This handles promise chaining immutably until all context handler is all gone from execution context.</td>
+        </tr>
     </tbody>
 </table>
