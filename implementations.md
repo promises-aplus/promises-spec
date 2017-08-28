@@ -71,6 +71,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/listenlin/cheno">cheno</a></td>
+            <td>Just an implementation of Promise/A+ then with ES6 syntax , just to learning Promise and ES6.</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/CodeCatalyst/promise.coffee">CodeCatalyst/promise.coffee</a></td>
             <td>Promises/A+ compliant implementation in object-oriented CoffeeScript</td>
             <td>1.1</td>
