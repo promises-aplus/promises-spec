@@ -141,6 +141,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/gaoxiaoliangz/gpromise">GPromise</a></td>
+            <td>Another Promise/A+ Implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/hbarcelos/promise-js">hbarcelos/promise-js</a></td>
             <td>Simple Promises/A+ JavaScript implementation</td>
             <td>1.1</td>
