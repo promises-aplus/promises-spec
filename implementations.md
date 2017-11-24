@@ -521,6 +521,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>A framework with non-recursive implementation of the Promises/A+ Role (for any Event Loop)</td>
         </tr>
         <tr>
+            <td>Perl</td>
+            <td><a href="https://github.com/kraih/mojo">kraih/mojo</a></td>
+            <td>A web framework whose event loop features an implementation of the Promises/A+ specification</td>
+        </tr>
+        <tr>
             <td>QML</td>
             <td><a href="https://github.com/benlau/quickpromise">Quick Promise</a></td>
             <td>Promises/A+ compliant implementation in QML</td>
