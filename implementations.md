@@ -146,6 +146,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/gaoxiaoliangz/gpromise">GPromise</a></td>
+            <td>Another Promise/A+ Implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/hbarcelos/promise-js">hbarcelos/promise-js</a></td>
             <td>Simple Promises/A+ JavaScript implementation</td>
             <td>1.1</td>
@@ -524,6 +529,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>Perl</td>
             <td><a href="https://github.com/alexbyk/perl-evo">alexbyk/perl-evo</a></td>
             <td>A framework with non-recursive implementation of the Promises/A+ Role (for any Event Loop)</td>
+        </tr>
+        <tr>
+            <td>Perl</td>
+            <td><a href="https://github.com/kraih/mojo">kraih/mojo</a></td>
+            <td>A web framework whose event loop features an implementation of the Promises/A+ specification</td>
         </tr>
         <tr>
             <td>QML</td>
