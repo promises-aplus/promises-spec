@@ -81,7 +81,7 @@ This treatment of thenables allows promise implementations to interoperate, as l
 To run `[[Resolve]](promise, x)`, perform the following steps:
 
 1. If `promise` and `x` refer to the same object, reject `promise` with a `TypeError` as the reason.
-1. If `x` is a promise, adopt its state [[3.4](#notes)]:
+1. (Recommended) If `x` is known to be a promise, adopt its state [[3.4](#notes)]:
    1. If `x` is pending, `promise` must remain pending until `x` is fulfilled or rejected.
    1. If/when `x` is fulfilled, fulfill `promise` with the same value.
    1. If/when `x` is rejected, reject `promise` with the same reason.
@@ -108,7 +108,7 @@ If a promise is resolved with a thenable that participates in a circular thenabl
 
 1. Implementations may allow `promise2 === promise1`, provided the implementation meets all requirements. Each implementation should document whether it can produce `promise2 === promise1` and under what conditions.
 
-1. Generally, it will only be known that `x` is a true promise if it comes from the current implementation. This clause allows the use of implementation-specific means to adopt the state of known-conformant promises.
+1. Generally, it will only be known that `x` is a true promise if it comes from the current implementation.  This clause allows the use of implementation-specific means to adopt the state of known-conformant promises, which may be identified by a test such as `x instanceof Promise`. This allows optimisations by not requiring the more general thenable-handling procedure with its repeated value inspection.
 
 1. This procedure of first storing a reference to `x.then`, then testing that reference, and then calling that reference, avoids multiple accesses to the `x.then` property. Such precautions are important for ensuring consistency in the face of an accessor property, whose value could change between retrievals.
 
