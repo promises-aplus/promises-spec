@@ -94,7 +94,7 @@ To run `[[Resolve]](promise, x)`, perform the following steps:
       1. If both `resolvePromise` and `rejectPromise` are called, or multiple calls to the same argument are made, the first call takes precedence, and any further calls are ignored.
       1. If calling `then` throws an exception `e`,
          1. If `resolvePromise` or `rejectPromise` have been called, ignore it.
-         1. Otherwise, reject `promise` with `e` as the reason.
+         1. Reject `promise` with `e` as the reason.
    1. If `then` is not a function, fulfill `promise` with `x`.
 1. If `x` is not an object or function, fulfill `promise` with `x`.
 
