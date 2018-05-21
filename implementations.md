@@ -36,6 +36,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/adispring/APromise">APromise</a></td>
+            <td>Tiny(about 81 loc), readable, usefull for learning Promise/A+ spec.</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/briancavalier/avow">avow</a></td>
             <td>Example Promises/A+ implementation. Simple, tiny, fast, fully async</td>
             <td>1.0</td>
