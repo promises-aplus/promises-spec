@@ -30,6 +30,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
         </tr>
     </thead>
     <tbody>
+         <tr>
+            <td><a href="https://github.com/perymimon/Promise">TP</a></td>
+            <td>Lightweight Promises/A+ implementation (~1.5kb minified) , write with ec5 only for wide compatibility</td>
+            <td>1.1.1</td>
+        </tr>
         <tr>
             <td><a href="https://github.com/abdulapopoola/Adehun">Adehun</a></td>
             <td>Light weight Promises/A+ implementation; good for learning about the Promise/A+ spec.</td>
