@@ -46,6 +46,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/cscott/babybird">babybird</a></td>
+            <td>A very fast standards-compliant ES2015 Promise library for node supporting subclasses</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/ariyankhan/belofte.js">BelofteJS</a></td>
             <td>A lightweight Promises/A+ compliant implementation of ECMAScript Promise API</td>
             <td>1.1</td>
