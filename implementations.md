@@ -101,6 +101,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/UUDigitalHumanitieslab/jquery-promise">@dhl-uu/jquery-promise</a></td>
+            <td>Miniature ES6 Promise polyfill based on jQuery.Deferred, for those who already use jQuery.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/diogocampos/promise-coffee">diogocampos/promise-coffee</a></td>
             <td>Promises/A+ spec-compliant promises in less than 80 lines of readable CoffeeScript</td>
             <td>1.1</td>
