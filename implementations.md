@@ -106,6 +106,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/coopersemantics/divorce">divorce</a></td>
+            <td>A lightweight Promises/A+ compliant library.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/msuperina/es3-promise">es3-promise</a></td>
             <td>An implementation of Promise then with ES3 syntax</td>
             <td>1.1</td>
