@@ -281,6 +281,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/AndreGeng/PromiseLet">PromiseLet</a></td>
+            <td>Promises/A+ implementation with ES6 class for learning purpose^_^</td>
+            <td>1.1.1</td>
+        </tr>
+        <tr>
             <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
             <td>A full, documented, standalone Promises/A+ 1.1 implementation for TypeScript / JavaScript / Node.js with some additional features to improve productivity</td>
             <td>1.1</td>
