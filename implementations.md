@@ -61,6 +61,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/skyline-123/bPromise">bPromise</a></td>
+            <td>A simple Promises/A+ implementation in browser.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/gobwas/broody-promises">broody-promises</a></td>
             <td>Promises with `.value()` method, that brings ability to get value of the chain synchronously</td>
             <td>1.1</td>
