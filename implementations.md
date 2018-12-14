@@ -62,7 +62,7 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
         </tr>
         <tr>
             <td><a href="https://github.com/skyline-123/bPromise">bPromise</a></td>
-            <td>A simple Promises/A+ implementation in browser.</td>
+            <td>A simple Promises/A+ implementation for learning.</td>
             <td>1.1</td>
         </tr>
         <tr>
