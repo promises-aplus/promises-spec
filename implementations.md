@@ -257,7 +257,7 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
         </tr>
         <tr>
             <td><a href="https://github.com/djfm/promesse">promesse</a></td>
-            <td>A Promises/A+ implementation that tries to be concise using functional style while remaining easy to understand</td>
+            <td>A Promises/A+ implementation that tries to be very concise using functional style and sacrificing understandability. Probably one of the smallest implementation out there with 87 lines and this is not minified. Arguably this is human-minified :)</td>
             <td>1.1</td>
         </tr>
         <tr>
