@@ -46,6 +46,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/ariyankhan/belofte.js">BelofteJS</a></td>
+            <td>A lightweight Promises/A+ compliant implementation of ECMAScript Promise API</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/daninnewyork/bloodhound">bloodhound</a></td>
             <td>Feature-rich promise library with performance timing and reporting baked in.</td>
             <td>1.1</td>
@@ -59,6 +64,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td><a href="https://github.com/gobwas/broody-promises">broody-promises</a></td>
             <td>Promises with `.value()` method, that brings ability to get value of the chain synchronously</td>
             <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/listenlin/cheno">cheno</a></td>
+            <td>Just an implementation of Promise/A+ then with ES6 syntax , just to learning Promise and ES6.</td>
+            <td>1.0</td>
         </tr>
         <tr>
             <td><a href="https://github.com/CodeCatalyst/promise.coffee">CodeCatalyst/promise.coffee</a></td>
@@ -96,6 +106,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/msuperina/es3-promise">es3-promise</a></td>
+            <td>An implementation of Promise then with ES3 syntax</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/shanewholloway/node-fate">fate</a></td>
             <td>Promises/A+ closure-based implementation</td>
             <td>1.0</td>
@@ -104,6 +119,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td><a href="https://github.com/gameclosure/ff">ff</a></td>
             <td>Simplifies the most common use cases for series, parallel, and promise utilities</td>
             <td>1.0</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/bucharest-gold/fidelity">fidelity</a></td>
+            <td>A fast and simple Promise/A+ implementation</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/tests-always-included/fid-promise">FidPromise</a></td>
@@ -116,8 +136,23 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/guanguer/Given">Given</a></td>
+            <td>Given is a Promises/A+ spec implementation wrote for fun and learning purposes, using ES6 syntax</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/gaoxiaoliangz/gpromise">GPromise</a></td>
+            <td>Another Promise/A+ Implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/hbarcelos/promise-js">hbarcelos/promise-js</a></td>
             <td>Simple Promises/A+ JavaScript implementation</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/HQidea/promise">HQidea/promise</a></td>
+            <td>A Promises/A+ implementation</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -133,6 +168,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
         <tr>
             <td><a href="https://github.com/calvinmetcalf/lie">Lie</a></td>
             <td>Small library following the ES6 syntax</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/RonNewcomb/promise">Lifelong.Promise</a></td>
+            <td>Lifelong implements the spec in a single, very strongly typed Typescript file, without extraneous identifiers.</td>
             <td>1.1</td>
         </tr>
         <tr>
@@ -191,6 +231,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/kiltjs/parole">Parole</a></td>
+            <td>Another ES6 promise implementation compliant with Promises/A+</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/lazd/Pinky">Pinky</a></td>
             <td>An extremely tiny Promises/A+ implementation that passes the Promises/A+ test suite</td>
             <td>1.0</td>
@@ -211,6 +256,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/djfm/promesse">promesse</a></td>
+            <td>A Promises/A+ implementation that tries to be concise using functional style while remaining easy to understand</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/bramstein/promis">Promis</a></td>
             <td>A small embeddable Promise polyfill</td>
             <td>1.1</td>
@@ -224,6 +274,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td><a href="https://github.com/xieranmaya/Promise3">Promise3</a></td>
             <td>A very easy-to-read source code of Promise implementation, good to learn how Promise works inside</td>
             <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/yanguango/promised">Promised</a></td>
+            <td>A 150 loc Promises/A+ implementation with ES6 class</td>
+            <td>1.0</td>
         </tr>
         <tr>
             <td><a href="http://promises.codeplex.com">Promises, Promises...</a></td>
@@ -271,6 +326,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.0</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/alberto/sure-thing">sure-thing</a></td>
+            <td>A simple and fast Promises/A+ implementation.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/William17/taxi">Taxi</a></td>
             <td>Simple and Annotated. A tiny example Promises/A+ implementation. Just for learning.</td>
             <td>1.1</td>
@@ -299,6 +359,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td><a href="https://github.com/dfilatov/jspromise">vow</a></td>
             <td>Promises/A+ implementation</td>
             <td>1.0</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/Victory/vPromise">vPromise</a></td>
+            <td>Apache 2.0 Licensed, Promises/A+ implementation</td>
+            <td>1.1</td>
         </tr>
         <tr>
             <td><a href="https://github.com/elnarddogg/wee-promise">WeePromise</a></td>
@@ -339,6 +404,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td><a href="https://github.com/bluejava/zousan">Zousan</a></td>
             <td>A lightning fast, very small (&lt;1k) Promises/A+ 1.1 Implementation (MIT license)</td>
             <td>1.1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/iam91/zpromise">zpromise</a></td>
+            <td>Simple Promises/A+ implementation, good for learning</td>
+            <td>1.0</td>
         </tr>
     </tbody>
 </table>
@@ -389,6 +459,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>jQuery is a fast, small, and feature-rich JavaScript library dealing with HTML document traversal, manipulation, event handling, animation, and Ajax.</td>
             <td>1.1</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/angular/zone.js">zone.js(0.7.7 or newer)</a></td>
+            <td>A Zone is an execution context that persists across async tasks.</td>
+            <td>1.1</td>
+        </tr>
     </tbody>
 </table>
 
@@ -409,6 +484,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>ActionScript</td>
             <td><a href="https://github.com/CodeCatalyst/promise-as3">CodeCatalyst/promise-as3</a></td>
             <td>Promises/A+ compliant implementation in ActionScript 3.0</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td><a href="https://github.com/syrusakbary/promise">promise</a></td>
+            <td>A clean and generic implementation of the Promises/A+ specification in Python</td>
         </tr>
         <tr>
             <td>Python</td>
@@ -446,6 +526,16 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>An implementation of the Promises/A+ pattern for asynchronous programming in Perl</td>
         </tr>
         <tr>
+            <td>Perl</td>
+            <td><a href="https://github.com/alexbyk/perl-evo">alexbyk/perl-evo</a></td>
+            <td>A framework with non-recursive implementation of the Promises/A+ Role (for any Event Loop)</td>
+        </tr>
+        <tr>
+            <td>Perl</td>
+            <td><a href="https://github.com/kraih/mojo">kraih/mojo</a></td>
+            <td>A web framework whose event loop features an implementation of the Promises/A+ specification</td>
+        </tr>
+        <tr>
             <td>QML</td>
             <td><a href="https://github.com/benlau/quickpromise">Quick Promise</a></td>
             <td>Promises/A+ compliant implementation in QML</td>
@@ -459,6 +549,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>PHP</td>
             <td><a href="https://github.com/guzzle/promises">Guzzle Promises</a></td>
             <td>Promises/A+ implementation in PHP that handles promise chaining and resolution iteratively, allowing for "infinite" promise chaining, while keeping the stack size constant.</td>
+        </tr>
+        <tr>
+            <td>PHP</td>
+            <td><a href="https://github.com/plvhx/promise">Promise PHP Library</a></td>
+            <td>This is a Promises/A+ implementation in PHP. This handles promise chaining immutably until all context handler is all gone from execution context.</td>
         </tr>
     </tbody>
 </table>
