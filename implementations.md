@@ -76,6 +76,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/hilarious-capital/comical-promise">comical-promise</a></td>
+            <td>A word-for-code Promises/A+ implementation</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/wizardwerdna/covenant">Covenant</a></td>
             <td>A tight and performant Promises/A+ compliant implementation in CoffeeScript</td>
             <td>1.1</td>
