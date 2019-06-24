@@ -251,6 +251,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/jfet97/Promyse">Promyse</a></td>
+            <td>Example implementation of Promises written in ES6 that supports <i>allSettled</i> and <i>any</i> static methods.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/satchmorun/promeso">promeso</a></td>
             <td>A little Promises/A+ implementation</td>
             <td>1.0</td>
