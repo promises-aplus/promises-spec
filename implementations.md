@@ -301,6 +301,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/Xotic750/promise-x">@xotic750/promise-x</a></td>
+            <td>A Promise/A+ and ES2018 implementation.</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/kriskowal/q">Q</a></td>
             <td>A tool for making and composing asynchronous promises in JavaScript</td>
             <td>1.0</td>
