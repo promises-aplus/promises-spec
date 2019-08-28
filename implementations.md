@@ -555,5 +555,10 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td><a href="https://github.com/plvhx/promise">Promise PHP Library</a></td>
             <td>This is a Promises/A+ implementation in PHP. This handles promise chaining immutably until all context handler is all gone from execution context.</td>
         </tr>
+        <tr>
+            <td>Lua</td>
+            <td><a href="https://github.com/zserge/lua-promises">zserge/lua-promises</a></td>
+            <td>A+ Promises in Lua. A very minimal promises implementation, compliant with the A+ Promises specification.</td>
+        </tr>
     </tbody>
 </table>
