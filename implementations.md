@@ -206,6 +206,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>1.1</td>
         </tr>
         <tr>
+            <td><a href="https://github.com/futantan/nuo.js">nuo.js</a></td>
+            <td>A Promise/A+ conformant implementation, only 80 LOC</td>
+            <td>1.1</td>
+        </tr>
+        <tr>
             <td><a href="https://github.com/Octane/Promise">Octane/Promise</a></td>
             <td>Promises/A+ compliant implementation of ES6 promises for browsers and Node.js</td>
             <td>1.1</td>
