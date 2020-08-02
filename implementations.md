@@ -410,8 +410,14 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>Simple Promises/A+ implementation, good for learning</td>
             <td>1.0</td>
         </tr>
+      	<tr>
+            <td><a href="https://github.com/chinazhonghao/APromise.git">APromise</a></td>
+            <td>A clear implementation of Promise/A+ in ES5 and ES6, easy to understand</td>
+            <td>1.0</td>
+        </tr>
     </tbody>
 </table>
+
 
 ## Inside Frameworks
 
