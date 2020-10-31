@@ -546,6 +546,11 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td>An unit-tested implementation of the Promises/A+ pattern for asynchronous programming in C#</td>
         </tr>
         <tr>
+            <td>C#</td>
+            <td><a href="https://github.com/timcassell/ProtoPromise">ProtoPromise</a></td>
+            <td>Most robust and efficient C# implementation of the Promises/A+ pattern, boasting support for cancelations and universal normalized progress.</td>
+        </tr>
+        <tr>
             <td>PHP</td>
             <td><a href="https://github.com/guzzle/promises">Guzzle Promises</a></td>
             <td>Promises/A+ implementation in PHP that handles promise chaining and resolution iteratively, allowing for "infinite" promise chaining, while keeping the stack size constant.</td>
