@@ -555,5 +555,10 @@ We've been excited to discover that the popularity of Promises/A+ has led to a n
             <td><a href="https://github.com/plvhx/promise">Promise PHP Library</a></td>
             <td>This is a Promises/A+ implementation in PHP. This handles promise chaining immutably until all context handler is all gone from execution context.</td>
         </tr>
+        <tr>
+            <td>Java</td>
+            <td><a href="https://github.com/namehillsoftware/handoff">Handoff</a></td>
+            <td>Simple Promises/A+ implementation in Java with high test coverage.</td>
+        </tr>
     </tbody>
 </table>
