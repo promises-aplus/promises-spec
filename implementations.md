@@ -410,6 +410,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>Simple Promises/A+ implementation, good for learning</td>
             <td>1.0</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/fightant1w1ll/prominate">prominate</a></td>
+            <td>A simple Promises/A+ implementation with ES6 class</td>
+            <td>1.0</td>
+        </tr>
     </tbody>
 </table>
 
