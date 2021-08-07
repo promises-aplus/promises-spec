@@ -52,7 +52,7 @@ promise.then(onFulfilled, onRejected)
     1. it must be called after `promise` is fulfilled, with `promise`'s value as its first argument.
     1. it must not be called before `promise` is fulfilled.
     1. it must not be called more than once.
-1. If `onRejected` is a function,
+1. If `onRejected` is a function:
     1. it must be called after `promise` is rejected, with `promise`'s reason as its first argument.
     1. it must not be called before `promise` is rejected.
     1. it must not be called more than once.
