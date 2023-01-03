@@ -410,6 +410,11 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td>Simple Promises/A+ implementation, good for learning</td>
             <td>1.0</td>
         </tr>
+        <tr>
+            <td><a href="https://github.com/piggymorning/promises-spec">jPromise</a><td>
+            <td>A simple and fast Promises/A+ implementation.</td>
+            <td>1.0</td>
+        </tr>
     </tbody>
 </table>
 
