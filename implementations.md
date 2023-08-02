@@ -269,7 +269,12 @@ The "Promise Objects" section of the ECMAScript specification has many additiona
             <td><a href="https://github.com/RubenVerborgh/promiscuous/">promiscuous</a></td>
             <td>A minimal and fast promise/deferred implementation</td>
             <td>1.0</td>
-        </tr>
+        </tr>        
+        <tr>
+            <td><a href="https://github.com/Firkraag/promise">promise</a></td>
+            <td>A Promise/A+ implementation with new ES6 features</td>
+            <td>1.0</td>
+        </tr> 
         <tr>
             <td><a href="https://github.com/xieranmaya/Promise3">Promise3</a></td>
             <td>A very easy-to-read source code of Promise implementation, good to learn how Promise works inside</td>
